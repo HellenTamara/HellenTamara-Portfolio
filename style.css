@@ -1,0 +1,207 @@
+/* Common Styles */
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f6f6f6;
+    font-family: "Roboto", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    font-family: "VT323";
+}
+
+.section-title {
+    font-family: "VT323";
+}
+
+:root {
+    --white-color: #f6f6f6;
+    --black-color: #000;
+    --accent-color: yellow;
+}
+
+.heading-1 {
+    font-size: 3.75rem;
+    font-weight: 700;
+}
+
+/* Navbar */
+.navbar {
+    height: 5rem;
+    margin: 0 5.31rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 1px solid #DEE2E6;
+    ;
+}
+
+.navbar:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 1rem;
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 1rem;
+}
+
+.logo {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+}
+
+/* Heading */
+.heading-wrapper {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.heading-left {
+    margin: 5.31rem;
+    height: 23.5rem;
+    width: 23.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.heading-img {
+    height: 23.5rem;
+}
+
+.heading-right {
+    margin: 0 5.37rem;
+    width: 39.62rem;
+
+}
+
+.heading-text {
+    font-size: 1.18rem;
+}
+
+.heading-1 {
+    font-size: 3.14rem;
+}
+
+/* .cta-btn{
+    clip-path: polygon(0 22%, 8% 22%, 8% 0, 92% 0, 92% 23%, 100% 23%, 100% 77%, 92% 77%, 92% 100%, 8% 100%, 8% 77%, 0 77%);
+
+    width: 9.31rem;
+    height: 2.88rem;
+    margin-top: 2.44rem;
+    background-color: #F4CD4B;
+    border-color: #000;
+} */
+
+.button-style {
+    width: 9.31rem;
+    height: 2.88rem;
+    position: relative;
+    margin-top: 2.44rem;
+}
+
+
+/* Main Rectangle */
+
+.main-rec {
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 9.31rem;
+    height: 2.88rem;
+
+    background: #F4CD4B;
+    border: 3px solid #000000;
+
+}
+
+.main-rec p {
+    color: #000;
+    position: absolute;
+    top: -5px;
+    right: 30px;
+    
+
+}
+
+
+/* Rectangle 1 */
+
+.rec-1 {
+    box-sizing: border-box;
+
+    position: absolute;
+    bottom: 0;
+    width: 0.51rem;
+    height: 0.48rem;
+
+    background: var(--white-color);
+    border-width: 3px 3px 0px 0px;
+    border-style: solid;
+    border-color: #000000;
+}
+
+/* Rectangle 2 */
+
+.rec-2 {
+    box-sizing: border-box;
+
+    position: absolute;
+    right: 0;
+    width: 0.51rem;
+    height: 0.48rem;
+
+    background: var(--white-color);
+    border-width: 0px 0px 3px 3px;
+    border-style: solid;
+    border-color: #000000;
+}
+
+/* Rectangle 3 */
+
+.rec-3 {
+    box-sizing: border-box;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0.51rem;
+    height: 0.48rem;
+
+    background: var(--white-color);
+    border-width: 3px 0px 0px 3px;
+    border-style: solid;
+    border-color: #000000;
+
+}
+
+/* Rectangle 4 */
+
+.rec-4 {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 0.51rem;
+    height: 0.48rem;
+
+    background: var(--white-color);
+    border-width: 0px 3px 3px 0px;
+    border-style: solid;
+    border-color: #000000;
+}
