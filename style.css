@@ -11,18 +11,15 @@ li {
     list-style: none;
 }
 
-.logo {
-    font-family: "VT323";
-}
-
 .section-title {
     font-family: "VT323";
+    font-size: 4.57rem;
 }
 
 :root {
     --white-color: #f6f6f6;
     --black-color: #000;
-    --accent-color: yellow;
+    --accent-color: #F4CD4B;
 }
 
 .heading-1 {
@@ -32,7 +29,7 @@ li {
 
 /* Navbar */
 .navbar {
-    height: 5rem;
+    height: 5.18rem;
     margin: 0 5.31rem;
     display: flex;
     align-items: center;
@@ -61,12 +58,14 @@ li {
 .logo {
     text-decoration: none;
     color: #000;
-    font-size: 1.5rem;
+    font-family: "VT323";
+    font-size: 2.5rem;
 }
 
 /* Heading */
 .heading-wrapper {
-    height: 70vh;
+    height: 75vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -77,25 +76,31 @@ li {
     justify-content: center;
 }
 
-.image-wrapper img{
+.image-wrapper {
+    margin-left: 5.31rem;
+}
+
+.image-wrapper img {
     position: relative;
-    height: 23.5rem;
-    width: 20rem;
-    animation: userAnimation 2s linear infinite; 
-    transition: transform 0.6s cubic-bezier(0.37, 0, 0.63, 1);
+    left: -5.31rem;
+    height: 24.78rem;
+    margin-left: 5.31rem;
+    animation: userAnimation 4s ease-in-out infinite;
 }
 
 @keyframes userAnimation {
-	0% {
-		transform: translatey(0px);
-	}
-	50% {
+    0% {
+        transform: translatey(0px);
+    }
 
-		transform: translatey(-20px);
-	}
-	100% {
-		transform: translatey(0px);
-	}
+    50% {
+
+        transform: translatey(-20px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
 }
 
 .heading-right {
@@ -106,64 +111,55 @@ li {
 
 .heading-text {
     font-size: 1.18rem;
+    margin-bottom: 3.22rem;
 }
 
 .heading-1 {
-    font-size: 3.14rem;
+    font-size: 4.57rem;
+    margin: 0;
+    padding: 0 13rem 0 0;
 }
 
-/* .cta-btn{
-    clip-path: polygon(0 22%, 8% 22%, 8% 0, 92% 0, 92% 23%, 100% 23%, 100% 77%, 92% 77%, 92% 100%, 8% 100%, 8% 77%, 0 77%);
-
-    width: 9.31rem;
-    height: 2.88rem;
-    margin-top: 2.44rem;
-    background-color: #F4CD4B;
-    border-color: #000;
-} */
+a .button-style {
+    width: 12.81rem;
+    height: 3.62rem;
+}
 
 .button-style {
-    width: 9.31rem;
-    height: 2.88rem;
+    width: 12.81rem;
+    height: 3.62rem;
     position: relative;
     margin-top: 2.44rem;
 }
 
-
-/* Main Rectangle */
-
 .main-rec {
-
     box-sizing: border-box;
-
     position: absolute;
-    width: 9.31rem;
-    height: 2.88rem;
-
-    background: #F4CD4B;
+    width: 12.81rem;
+    height: 3.62rem;
+    background: var(--accent-color);
     border: 2px solid #000000;
 
 }
 
 .main-rec p {
     color: #000;
-    position: absolute;
-    top: -5px;
-    right: 30px;
-    
+    font-family: "VT323";
+    font-size: 1.81rem;
+    margin: 0;
+    text-align: center;
+    padding: 0.90rem 0;
+
 
 }
-
-
-/* Rectangle 1 */
 
 .rec-1 {
     box-sizing: border-box;
 
     position: absolute;
     bottom: 0;
-    width: 0.51rem;
-    height: 0.48rem;
+    width: 0.68rem;
+    height: 0.68rem;
 
     background: var(--white-color);
     border-width: 2px 2px 0px 0px;
@@ -171,15 +167,14 @@ li {
     border-color: #000000;
 }
 
-/* Rectangle 2 */
 
 .rec-2 {
     box-sizing: border-box;
 
     position: absolute;
     right: 0;
-    width: 0.51rem;
-    height: 0.48rem;
+    width: 0.68rem;
+    height: 0.68rem;
 
     background: var(--white-color);
     border-width: 0px 0px 2px 2px;
@@ -187,7 +182,6 @@ li {
     border-color: #000000;
 }
 
-/* Rectangle 3 */
 
 .rec-3 {
     box-sizing: border-box;
@@ -195,8 +189,8 @@ li {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 0.51rem;
-    height: 0.48rem;
+    width: 0.68rem;
+    height: 0.68rem;
 
     background: var(--white-color);
     border-width: 2px 0px 0px 2px;
@@ -205,17 +199,142 @@ li {
 
 }
 
-/* Rectangle 4 */
-
 .rec-4 {
     box-sizing: border-box;
 
     position: absolute;
-    width: 0.51rem;
-    height: 0.48rem;
+    width: 0.68rem;
+    height: 0.68rem;
 
     background: var(--white-color);
     border-width: 0px 2px 2px 0px;
     border-style: solid;
     border-color: #000000;
+}
+
+/* Latest Work Section */
+
+.latest-work-wrap {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 3.96rem 0 3.96rem 0;
+    background-color: #F1EFEB;
+}
+
+.latest-work-title,
+.latest-work-text {
+    margin: 0 0 0 5.31rem;
+}
+
+.latest-works-gallery {
+    margin: 0 0 0 5.31rem;
+    display: flex;
+}
+
+.project-wrap {
+    width: 31.31rem;
+    height: 27.94rem;
+    margin: 3rem 7.5rem 3rem 0;
+    background: #D7CBBB;
+    border-radius: 4px 33px 37px;
+    overflow: hidden;
+}
+
+.project-wrap:hover {
+    filter: brightness(0.5);
+}
+
+.project-title {
+    font-size: 2.3rem;
+    margin: 2.5rem 0 0 2.5rem;
+}
+
+.project-technologies {
+    margin: 1rem 0 0 2.5rem;
+}
+
+.project-wrap img {
+    position: relative;
+    left: -3rem;
+    margin: 2rem 0 0 0;
+}
+
+.line {
+    border-left: 2px solid #DEDDDA;
+    height: 18.5px;
+    position: absolute;
+    left: 50%;
+    margin: -3px;
+}
+
+.show-more {
+    text-align: center;
+    margin: 2rem 0 0 0;
+}
+
+.show-more a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+/* Contact Me Section */
+
+.contact-wrapper {
+    height: 39.68rem;
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-btn {
+    width: 12.59rem;
+    height: 3.40rem;
+    border: none;
+    border-radius: 28px;
+    background-color: var(--accent-color);
+    font-family: "VT323";
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Responsive */
+
+@media (min-width: 1279px) {
+    .navbar {
+        width: 1093px;
+        margin: 0 auto;
+    }
+
+    .heading-wrapper {
+        width: 1263px;
+        margin: 0 auto;
+    }
+
+    .latest-work-title,
+    .latest-work-text {
+        width: 1093px;
+        margin: 0 auto;
+    }
+
+    .latest-works-gallery {
+        width: 1093px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .project-1
+    {
+        margin: 3rem 0 2rem 0;
+    }
+
+    .project-2
+    {
+        margin: 3rem 0 2rem 5rem;
+    }
+
+
 }
