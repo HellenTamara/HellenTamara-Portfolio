@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=VT323&display=swap"
         rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://unpkg.com/akar-icons-fonts"></script>
     <title>Hellen Tamara Naito</title>
 </head>
@@ -29,9 +30,6 @@
         </nav>
         <div class="heading-wrapper">
             <div class="heading-left">
-                <!-- <div class="image-wrapper">
-                    <img src="Assets/GIRL.png" alt="" class="header-img">
-                </div> -->
                 <div class="image-wrapper">
                     <img src="Assets/Hero.png" alt="personal-image">
                 </div>
@@ -41,18 +39,16 @@
                 <p class="heading-text">I'm a web developer adept at transforming designs and projects into
                     high-performance, user-friendly websites that enhance customer engagement and elevate your online
                     presence.</p>
-                <!-- <input type="button" value="Get in touch" class="cta-btn"> -->
-                    <div class="button-style"><a href="">
+                <div class="button-style"><a href="#">
                         <div class="main-rec">
                             <p>Get in touch!</p>
                         </div>
                         <div class="rec-1"></div>
                         <div class="rec-2"></div>
                         <div class="rec-3"></div>
-                        <div class="rec-4"></div></a>
-                    </div>
-                
-
+                        <div class="rec-4"></div>
+                    </a>
+                </div>
                 <!-- <ul class="icon-list">
                     <li><i class="ai-bootstrap-fill"></i></li>
                     <li><i class="ai-vscode-fill"></i></li>
@@ -66,21 +62,28 @@
     </header>
 
     <section id="latest-work">
-     <div class="latest-work-wrap">
+        <div class="latest-work-wrap">
             <h1 class="section-title latest-work-title">Latest Work</h1>
             <p class="latest-work-text">I hope you enjoy exploring my latest works</p>
             <div class="latest-works-gallery">
-                <div class="overlay overlay-1"></div>
+                <div class="arrow-wrap arrow-wrap-1">
+                    <a href="https://example.com/"></a>
+                    <i class="ai-arrow-right arrow"></i>
+                </div>
                 <div class="project-wrap project-1">
                     <p class="project-title">E-commerce</p>
                     <p class="project-technologies">Typescript ⋅ Jquery</p>
                     <img src="Assets/mock.png" alt="website-mockup">
                 </div>
-                <div class="overlay overlay-2"></div>
+                <div class="arrow-wrap arrow-wrap-2">
+                    <a href="https://example.com/"></a>
+                    <i class="ai-arrow-right arrow"></i>
+                </div>
                 <div class="project-wrap project-2">
                     <p class="project-title">Product</p>
                     <p class="project-technologies">Typescript ⋅ Jquery</p>
                     <img src="Assets/mock.png" alt="website-mockup">
+
                 </div>
             </div>
             <div class="line"></div>
@@ -90,12 +93,24 @@
 
     <section class="contact">
         <div class="contact-wrapper">
-            <h1 class="section-title">Let's work together</h1>
-            <input type="button" value="Get in touch" class="cta-btn">
+            <h1 class="section-title contact-title">Let's work together</h1>
+            <div class="button-style"><a href="#">
+                <div class="main-rec">
+                    <p>Get in touch!</p>
+                </div>
+                <div class="rec-1"></div>
+                <div class="rec-2"></div>
+                <div class="rec-3"></div>
+                <div class="rec-4"></div>
+            </a>
+        </div>
         </div>
     </section>
+    <div class="avatar"><img src="Assets/cat.png" alt=""></div>
     <footer>
-
+        <div class="footer">
+            <a href="mailto:hellen.tamara@outlook.com" class="email">Contact me</a>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
