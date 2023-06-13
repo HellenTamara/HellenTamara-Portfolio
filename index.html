@@ -17,17 +17,24 @@
 
 <body>
     <header>
+        <!-- Navbar -->
         <nav>
             <div class="navbar">
                 <a href="" class="logo">Hellen</a>
+                <div class="menu-wrapper">
+                    <div class="line-menu line-1"></div>
+                    <div class="line-menu line-1"></div>
+                </div>
                 <ul class="navbar-list">
                     <li><a class="nav-item" href="#">Work</a></li>
-                    <li><a class="nav-item" href="#">Resume</a></li>
+                    <li><a class="nav-item" href="Assets/Hellen Tamara Resume.pdf" download>Resume</a></li>
                     <li><a class="nav-item" href="#">Linkedin</a></li>
                     <li><a class="nav-item" href="https://github.com/HellenTamara">GitHub</a></li>
                 </ul>
             </div>
         </nav>
+
+        <!-- Section 1 (Heading) -->
         <div class="heading-wrapper">
             <div class="heading-left">
                 <div class="image-wrapper">
@@ -35,19 +42,19 @@
                 </div>
             </div>
             <div class="heading-right">
-                <h1 class="section-title heading-1">Hi, I am Hellen Naito</h1>
+                <h1 class="section-title heading-1">Hi, I am</h1>
+                <h1 class="section-title heading-1">Hellen Naito</h1>
                 <p class="heading-text">I'm a web developer adept at transforming designs and projects into
                     high-performance, user-friendly websites that enhance customer engagement and elevate your online
                     presence.</p>
-                <div class="button-style"><a href="#">
-                        <div class="main-rec">
-                            <p>Get in touch!</p>
-                        </div>
-                        <div class="rec-1"></div>
-                        <div class="rec-2"></div>
-                        <div class="rec-3"></div>
-                        <div class="rec-4"></div>
-                    </a>
+                <div class="button-style">
+                    <div class="main-rec">
+                        <p>Get in touch!</p>
+                    </div>
+                    <div class="rec-1"></div>
+                    <div class="rec-2"></div>
+                    <div class="rec-3"></div>
+                    <div class="rec-4"></div>
                 </div>
                 <!-- <ul class="icon-list">
                     <li><i class="ai-bootstrap-fill"></i></li>
@@ -60,7 +67,7 @@
         </div>
         </div>
     </header>
-
+    <!-- Latest Work Section -->
     <section id="latest-work">
         <div class="latest-work-wrap">
             <h1 class="section-title latest-work-title">Latest Work</h1>
@@ -83,7 +90,6 @@
                     <p class="project-title">Product</p>
                     <p class="project-technologies">Typescript ⋅ Jquery</p>
                     <img src="Assets/mock.png" alt="website-mockup">
-
                 </div>
             </div>
             <div class="line"></div>
@@ -91,10 +97,11 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section class="contact">
         <div class="contact-wrapper">
             <h1 class="section-title contact-title">Let's work together</h1>
-            <div class="button-style"><a href="#">
+            <div class="button-style">
                 <div class="main-rec">
                     <p>Get in touch!</p>
                 </div>
@@ -102,10 +109,37 @@
                 <div class="rec-2"></div>
                 <div class="rec-3"></div>
                 <div class="rec-4"></div>
-            </a>
-        </div>
+            </div>
         </div>
     </section>
+
+    <!-- Contact Window -->
+    <div class="window-overlay"></div>
+    <div class="window-wrapper">
+        <div class="window-left">
+            <p class="window-heading">I will reach you out soon!</p>
+            <p class="window-text">in the meantime, here are my socials...</p>
+            <i class="ai-github-fill"><a href="#"></a></i>
+            <div class="icon-wrap"></div>
+            <i class="ai-linkedin-fill"><a href="#"></a></i>
+        </div>
+        <div class="window-right">
+            <form id="contact-form">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Avatar (cat) -->
     <div class="avatar"><img src="Assets/cat.png" alt=""></div>
     <footer>
         <div class="footer">
