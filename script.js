@@ -8,28 +8,11 @@ $(document).ready(function () {
     $(".arrow-wrap-2").click(function () {
         window.open("https://example.com", "_blank");
     });
+
+    $(".project-wrap").click(function () {
+        window.open("https://example.com", "_blank");
+    });
 });
-
-// Cat animation
-
-const element = document.querySelector('.avatar');
-
-function startAnimation() {
-    element.classList.add('animated');
-}
-
-function stopAnimation() {
-    element.classList.remove('animated');
-}
-
-window.addEventListener('scroll', () => {
-    if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
-        startAnimation();
-    } else {
-        stopAnimation();
-    }
-});
-
 
 // Contact window
 $(document).ready(function () {
@@ -50,8 +33,6 @@ $(document).ready(function () {
         e.stopPropagation();
     });
 });
-
-
 
 
 
