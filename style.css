@@ -2,7 +2,6 @@
 html {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
     background-color: #f6f6f6;
     font-family: "Roboto", sans-serif;
     position: relative;
@@ -507,7 +506,7 @@ textarea {
 /* Footer */
 .footer {
     height: 4rem;
-    width: 69rem;
+    width: 100%;
     margin: 0 5.31rem;
     border-top: 1px solid #DEE2E6;
     display: flex;
@@ -610,12 +609,16 @@ textarea {
         visibility: visible;
     }
 
+    .heading-wrapper {
+        height: 65vh;
+    }
+
     .image-wrapper {
         margin-left: 3rem;
     }
 
     .heading-right {
-        margin: 0 3rem;
+        margin: 0 3rem 0 0;
     }
 
     .heading-right .button-style,
