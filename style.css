@@ -92,15 +92,10 @@ li {
     justify-content: center;
 }
 
-.image-wrapper {
-    margin-left: 5.31rem;
-}
-
 .image-wrapper img {
     position: relative;
-    left: -5.31rem;
     height: 24.78rem;
-    margin-left: 5.31rem;
+    margin: 0 0 0 5.31rem;
     animation: userAnimation 4s ease-in-out infinite;
 }
 
@@ -598,7 +593,7 @@ textarea {
     }
 
     .logo {
-        margin: 0 0 0 3%;
+        margin: 0 0 0 3rem;
     }
 
     .navbar .nav-item {
@@ -613,12 +608,12 @@ textarea {
         height: 65vh;
     }
 
-    .image-wrapper {
-        margin-left: 3rem;
+    .heading-left {
+        margin-left: -3rem;
     }
 
     .heading-right {
-        margin: 0 3rem 0 0;
+        margin: 0 3rem 0 4rem;
     }
 
     .heading-right .button-style,
@@ -651,11 +646,11 @@ textarea {
         width: 280px;
     }
 
-    .contact-wrapper .main-rec p  {
+    .contact-wrapper .main-rec p {
         position: relative;
         padding-top: 13px;
     }
-    
+
     .footer {
         margin: 0;
     }
@@ -679,4 +674,101 @@ textarea {
         visibility: hidden;
     }
 
+}
+
+@media (max-width: 808px) {
+    .heading-left {
+        width: 40rem;
+    }
+
+    .image-wrapper {
+        margin-left: -0.5rem;
+    }
+
+    .heading-right {
+        margin: 0 1.3rem 0 3rem;
+    }
+}
+
+@media (max-width: 733px) {
+    .navbar-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        margin: 0 1.5rem;
+    }
+
+    .heading-wrapper {
+        flex-direction: column;
+        height: auto;
+        margin: 3rem 0;
+    }
+
+    .heading-left {
+        margin: 0;
+        width: 100%;
+    }
+
+    .image-wrapper img {
+        margin: 1rem auto;
+    }
+
+    .heading-right {
+        margin: 2rem 3rem 0 3rem;
+        width: 90%;
+    }
+
+    .latest-work-wrap {
+        height: auto;
+    }
+
+    .latest-work-title {
+        width: auto;
+        text-align: left;
+        margin-left: 1.5rem;
+    }
+
+    .latest-work-text {
+        display: none;
+    }
+
+    .latest-works-gallery {
+        width: 100%;
+        flex-direction: column;
+        margin: 0 1.5rem;
+    }
+
+    .project-wrap {
+        height: 30rem;
+        width: 90%;
+    }
+
+    .project-2 {
+        margin-top: 1rem;
+    }
+
+    .window-wrapper {
+        width: auto;
+    }
+
+    .contact-title {
+        padding: 0 3rem;
+        text-align: center;
+    }
+
+    .footer {
+        margin: 0;
+    }
+
+    .footer .navbar-list {
+        padding: 0;
+        flex-direction: row;
+    }
+
+    .footer .nav-item {
+        margin: 0 1rem;
+        font-size: 1rem;
+    }
 }
