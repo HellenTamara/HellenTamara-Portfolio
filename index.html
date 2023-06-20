@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="UTF-8">
 
 <head>
     <meta charset="UTF-8">
@@ -25,12 +25,29 @@
                     <div class="line-menu line-1"></div>
                     <div class="line-menu line-1"></div>
                 </div>
-                <ul class="navbar-list">
-                    <li><a class="nav-item" href="#">Work</a></li>
-                    <li><a class="nav-item" href="Assets/Hellen Tamara Resume.pdf" download>Resume</a></li>
-                    <li><a class="nav-item" href="#">Linkedin</a></li>
-                    <li><a class="nav-item" href="https://github.com/HellenTamara">GitHub</a></li>
-                </ul>
+                <div class="vertical-menu">
+                    <ul class="navbar-list">
+                        
+                        <li class="lang-eng"><i class="ai-briefcase menu-icon"></i><a class="nav-item" href="#">Work</a></li>
+                        <li class="lang-pt"><i class="ai-briefcase menu-icon"></i><a class="nav-item" href="#">Trabalhos</a></li>
+    
+                       
+                        <li class="lang-eng"><i class="ai-file menu-icon"></i><a class="nav-item" href="Assets/Hellen Tamara Resume.pdf" download>Resume</a></li>
+                        <li class="lang-pt"><i class="ai-file menu-icon"></i><a class="nav-item" href="Assets/Hellen Tamara Resume.pdf" download>Currículo</a></li>
+    
+                        
+                        <li><i class="ai-link-out menu-icon"></i><a class="nav-item" href="#">Linkedin</a></li>
+                       
+                        <li> <i class="ai-link-out menu-icon"></i><a class="nav-item" href="https://github.com/HellenTamara">GitHub</a></li>
+    
+                        <div class="language">
+                            <i class="ai-globe"></i>
+                            <li><a class="nav-item lang-eng lang" href="#">PT</a></li>
+                            <li><a class="nav-item lang-pt lang" href="#">EN</a></li>
+                            <i class="ai-triangle-down-fill"></i>
+                        </div>
+                    </ul>
+                </div>  
             </div>
         </nav>
 
@@ -42,14 +59,19 @@
                 </div>
             </div>
             <div class="heading-right">
-                <h1 class="section-title heading-1">Hi, I am</h1>
+                <h1 class="section-title heading-1 lang-eng">Hi, I am</h1>
+                <h1 class="section-title heading-1 lang-pt">Olá, eu sou</h1>
                 <h1 class="section-title heading-1">Hellen Naito</h1>
-                <p class="heading-text">I'm a web developer adept at transforming designs and projects into
+                <p class="heading-text lang-eng">I'm a web developer adept at transforming designs and projects into
                     high-performance, user-friendly websites that enhance customer engagement and elevate your online
                     presence.</p>
+                <p class="heading-text lang-pt">Sou uma programadora web capaz de transformar designs e projectos em
+                    sítios web de elevado desempenho e de fácil utilização, que melhoram o envolvimento dos clientes e
+                    elevam a sua presença online.</p>
                 <div class="button-style">
                     <div class="main-rec">
-                        <p>Get in touch!</p>
+                        <p class="lang-eng">Get in touch!</p>
+                        <p class="lang-pt">Entre em contato!</p>
                     </div>
                     <div class="rec-1"></div>
                     <div class="rec-2"></div>
@@ -70,8 +92,10 @@
     <!-- Latest Work Section -->
     <section id="latest-work">
         <div class="latest-work-wrap">
-            <h1 class="section-title latest-work-title">Latest Work</h1>
-            <p class="latest-work-text">I hope you enjoy exploring my latest works</p>
+            <h1 class="section-title latest-work-title lang-eng">Latest Work</h1>
+            <h1 class="section-title latest-work-title lang-pt">Projetos Recentes</h1>
+            <p class="latest-work-text lang-eng">I hope you enjoy exploring my latest works</p>
+            <p class="latest-work-text lang-pt">Espero que goste de explorar os meus últimos trabalhos</p>
             <div class="latest-works-gallery">
                 <div class="layer-gallery">
                     <div class="arrow-wrap arrow-wrap-1">
@@ -95,17 +119,21 @@
                 </div>
             </div>
             <div class="line"></div>
-            <p class="show-more"><a href="#">Show More</a></p>
+            <p class="show-more lang-eng"><a href="#">Show More</a></p>
+            <p class="show-more lang-pt"><a href="#">Ver Mais</a></p>
+
         </div>
     </section>
 
     <!-- Contact Section -->
     <section class="contact">
         <div class="contact-wrapper">
-            <h1 class="section-title contact-title">Let's work together</h1>
+            <h1 class="section-title contact-title lang-eng">Let's work together</h1>
+            <h1 class="section-title contact-title lang-pt">Vamos trabalhar juntos</h1>
             <div class="button-style">
                 <div class="main-rec">
-                    <p>Get in touch!</p>
+                    <p class="lang-eng">Get in touch!</p>
+                    <p class="lang-pt">Entre em contato!</p>
                 </div>
                 <div class="rec-1"></div>
                 <div class="rec-2"></div>
@@ -119,24 +147,28 @@
     <div class="window-overlay"></div>
     <div class="window-wrapper">
         <div class="window-left">
-            <p class="window-heading">I will reach you out soon!</p>
-            <p class="window-text">in the meantime, here are my socials...</p>
+            <p class="window-heading lang-eng">I will reach you out soon!</p>
+            <p class="window-heading lang-pt">Entrarei em contato em breve!</p>
+            <p class="window-text">enquanto isso, confira minhas redes sociais...</p>
             <i class="ai-github-fill"><a href="#"></a></i>
             <div class="icon-wrap"></div>
             <i class="ai-linkedin-fill"><a href="#"></a></i>
         </div>
         <div class="window-right">
             <form id="contact-form">
-                <label for="fullname">Full Name</label>
+                <label for="fullname lang-eng">Full Name</label>
+                <label for="fullname lang-pt">Full Name</label>
                 <input type="text" id="fullname" name="fullname" required>
 
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="message">Message</label>
+                <label for="message lang-eng">Message</label>
+                <label for="message lang-pt">Mensagem</label>
                 <textarea id="message" name="message" required></textarea>
 
-                <button type="submit">Send</button>
+                <button type="submit" class="lang-eng">Send</button>
+                <button type="submit" class="lang-pt">Send</button>
             </form>
         </div>
     </div>
@@ -144,10 +176,15 @@
     <!-- Footer -->
     <footer>
         <div class="footer">
-            <a href="mailto:hellen.tamara@outlook.com" class="email">Contact me</a>
+            <a href="mailto:hellen.tamara@outlook.com" class="email lang-eng">Contact me</a>
+            <a href="mailto:hellen.tamara@outlook.com" class="email lang-pt">Entre em contato</a>
             <ul class="navbar-list">
-                <li><a class="nav-item" href="#">Work</a></li>
-                <li><a class="nav-item" href="Assets/Hellen Tamara Resume.pdf" download>Resume</a></li>
+                <li><a class="nav-item lang-eng" href="#">Work</a></li>
+                <li><a class="nav-item lang-pt" href="#">Trabalhos</a></li>
+
+                <li><a class="nav-item lang-eng" href="Assets/Hellen Tamara Resume.pdf" download>Resume</a></li>
+                <li><a class="nav-item lang-pt" href="Assets/Hellen Tamara Resume.pdf" download>Currículo</a></li>
+
                 <li><a class="nav-item" href="#">Linkedin</a></li>
                 <li><a class="nav-item" href="https://github.com/HellenTamara">GitHub</a></li>
             </ul>

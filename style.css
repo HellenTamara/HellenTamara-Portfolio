@@ -27,6 +27,12 @@ li {
     font-weight: 700;
 }
 
+.lang-eng {}
+
+.lang-pt {
+    display: none;
+}
+
 /* Navbar */
 .navbar {
     height: 5.18rem;
@@ -57,6 +63,24 @@ li {
     justify-content: space-between;
 }
 
+.language {
+    display: flex;
+    margin-left: 3.53rem;
+}
+
+.language .nav-item {
+    margin: 0 7px;
+}
+
+.navbar:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item.lang {
+    margin: 2px;
+}
+
 .navbar-list {
     display: flex;
     align-items: center;
@@ -75,6 +99,7 @@ li {
     font-family: "VT323";
     font-size: 2.5rem;
 }
+
 
 /* Heading */
 .heading-wrapper {
@@ -501,16 +526,17 @@ textarea {
 /* Footer */
 .footer {
     height: 4rem;
-    width: 100%;
     margin: 0 5.31rem;
-    border-top: 1px solid #DEE2E6;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    border-top: 1px solid #DEE2E6;
+
 }
 
 .footer ul {
     position: absolute;
+    margin: 0 auto;
     visibility: hidden;
 
 }
@@ -519,6 +545,7 @@ textarea {
     text-decoration: none;
     color: var(--black-color);
     font-size: 16px;
+    width: 0 auto;
 }
 
 /* Responsive */
@@ -576,13 +603,6 @@ textarea {
     }
 }
 
-@media (min-width: 1009px) {
-    .footer {
-        width: 1093px;
-        margin: 0 auto;
-    }
-}
-
 @media (max-width: 1008px) {
     html {
         font-size: 90%;
@@ -596,8 +616,46 @@ textarea {
         margin: 0 0 0 3rem;
     }
 
-    .navbar .nav-item {
-        visibility: hidden;
+    /* Mobile Menu */
+
+    .vertical-menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 50%;
+        background-color: var(--white-color);
+        z-index: 2;
+    }
+
+    .navbar-list {
+       display: flex;
+       justify-content: start;
+       align-items: start;
+       margin-top: 4.6rem;
+    }
+
+    .menu-icon {
+        margin-left: 2.19rem;
+        font-size: 1.5rem;
+        height: 50%;
+    }
+
+    .language {
+        margin-left: 36px;
+    }
+
+    .vertical-menu .nav-item,
+    .vertical-menu .language
+    {
+        font-size: 2rem;
+        color: var(--black-color);
+        z-index: 3;
+        margin-left: 1.5rem;
+    }
+
+    .vertical-menu li{
+        line-height: 3.56rem;
     }
 
     .menu-wrapper {
@@ -671,7 +729,7 @@ textarea {
 
     .email {
         position: absolute;
-        visibility: hidden;
+        display: none;
     }
 
 }
@@ -688,9 +746,14 @@ textarea {
     .heading-right {
         margin: 0 1.3rem 0 3rem;
     }
+
 }
 
 @media (max-width: 733px) {
+    .section-title {
+        font-size: 4rem;
+    }
+
     .navbar-list {
         display: flex;
         flex-direction: column;
