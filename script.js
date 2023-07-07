@@ -1,3 +1,25 @@
+// Sidebar
+$(document).ready(function () {
+    $(".menu-wrapper").click(function (e) {
+        e.stopPropagation();
+        $(".window-overlay").fadeIn();
+        $(".vertical-menu").addClass("show");
+    });
+
+    $(window).click(function () {
+        if ($(".vertical-menu").hasClass("show")) {
+            $(".window-overlay").fadeOut();
+            $(".vertical-menu").removeClass("show");
+        }
+    });
+
+    $(".vertical-menu").click(function (e) {
+        e.stopPropagation();
+    });
+});
+
+
+
 // Redirecting click from latest works
 
 $(document).ready(function () {

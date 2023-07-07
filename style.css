@@ -27,7 +27,9 @@ li {
     font-weight: 700;
 }
 
-.lang-eng {}
+.lang-eng {
+
+}
 
 .lang-pt {
     display: none;
@@ -66,6 +68,7 @@ li {
 .language {
     display: flex;
     margin-left: 3.53rem;
+    cursor: pointer;
 }
 
 .language .nav-item {
@@ -79,6 +82,91 @@ li {
 
 .nav-item.lang {
     margin: 2px;
+}
+
+
+.language-block {
+    display: none;
+    position: absolute;
+    right: 5rem;
+    top: 3.5rem;
+    width: 150px;
+    height: 80px;
+}
+
+
+.bubble {
+    height: 400px;
+	position: absolute;
+    top: 2rem;
+    right: 1rem;
+	display: block;
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 16px;
+	line-height: 1.3em;
+	background-color: #fff;
+	color: #000;
+	padding-top: 1px;
+	box-shadow: 0 -4px #fff, 
+				0 -7px #000, 
+				4px 0 #fff, 
+				4px -3px #000, 
+				7px 0 #000, 
+				0 4px #fff, 
+				0 7px #000, 
+				-4px 0 #fff, 
+				-4px 4px #000, 
+				-7px 0 #000, 
+				-4px -4px #000, 
+				4px 4px #000;
+	box-sizing: border-box;
+	width: 400px;
+}
+
+.bubble::after {
+	content: '';
+	display: block;
+	position: absolute;
+	box-sizing: border-box;
+}
+
+
+.bubble.mini {
+	width: 115px;
+    height: 25px;
+	font-size: 16px;
+    text-align: center;
+	font-family: monospace;
+}
+
+.bubble.top::after {
+	height: 3px;
+	width: 3px;
+	top: -7px;
+	right: 20px;
+	box-shadow: 0 -3px #000, 
+				0 -6px #000, 
+				0 -9px #000, 
+				0 -12px #000, 
+				-3px -9px #000, 
+				-6px -6px #000, 
+				-9px -3px #000, 
+				-4px -4px #fff, 
+				-8px -4px #fff, 
+				-4px -8px #fff, 
+				-3px 0 #fff, 
+				-6px 0 #fff, 
+				-9px 0 #fff;
+}
+
+.bubble ul{ 
+    padding: 0;
+}
+
+
+.language:hover .language-block{
+    display: block;
 }
 
 .navbar-list {
@@ -280,7 +368,7 @@ li {
 .layer-gallery {
     position: absolute;
     display: flex;
-    width: 100%;
+    width: 100vw;
 }
 
 .arrow-wrap {
@@ -381,7 +469,7 @@ li {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
-    z-index: 999;
+    z-index: 10;
     display: none;
 }
 
@@ -393,7 +481,7 @@ li {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1000;
+    z-index: 11;
     visibility: hidden;
     opacity: 0;
 }
@@ -603,6 +691,13 @@ textarea {
     }
 }
 
+@media (min-width: 1009px) {
+    .menu-icon {
+        visibility: hidden;
+    }
+
+}
+
 @media (max-width: 1008px) {
     html {
         font-size: 90%;
@@ -618,31 +713,60 @@ textarea {
 
     /* Mobile Menu */
 
+   .show {
+    visibility: visible;
+    opacity: 1;
+   }
+   
     .vertical-menu {
+        visibility: hidden;
+        opacity: 0;
+        display: block;
         position: absolute;
         right: 0;
         top: 0;
         height: 100vh;
         width: 50%;
         background-color: var(--white-color);
-        z-index: 2;
+        z-index: 1000;
     }
 
-    .navbar-list {
+    nav .navbar-list {
        display: flex;
+       flex-direction: column;
        justify-content: start;
        align-items: start;
-       margin-top: 4.6rem;
+       margin: 4.6rem 0 0 2rem;
     }
 
     .menu-icon {
-        margin-left: 2.19rem;
+        margin-left: 1rem;
         font-size: 1.5rem;
         height: 50%;
     }
 
+    .divider {
+        position: relative;
+        top: 25rem;
+        width: 100%;
+        border-bottom: 1px solid #DEE2E6;
+        margin-top: 2rem;
+    }
+
     .language {
-        margin-left: 36px;
+        margin: 1.5rem 0;
+    }
+
+    .ai-globe {
+        font-size: 1.5rem;
+        padding-top: 1.3rem;
+    }
+
+    .ai-triangle-down-fill {
+        position: absolute;
+        margin-left: 6rem;
+        font-size: 1.5rem;
+        padding-top: 1.3rem;
     }
 
     .vertical-menu .nav-item,
@@ -654,13 +778,30 @@ textarea {
         margin-left: 1.5rem;
     }
 
+    .language-block {
+        display: block;
+        position: relative;
+        top: 2rem;
+    }    
+
+    .bubble {
+        visibility: hidden;
+    }
+
+    .bubble ul {
+        visibility: visible;
+    }
+
     .vertical-menu li{
-        line-height: 3.56rem;
+        line-height: 4.5rem;
     }
 
     .menu-wrapper {
         visibility: visible;
+        z-index: 3;
     }
+
+        /* End of Mobile Menu */
 
     .heading-wrapper {
         height: 65vh;
@@ -684,12 +825,13 @@ textarea {
     }
 
     .latest-work-title,
-    .latest-work-text {
+    .latest-work-text,
+    .latest-works-gallery {
         margin: 0 0 0 3rem;
     }
 
-    .latest-works-gallery {
-        margin: 0 0 0 3rem;
+    .layer-gallery {
+        display: none;
     }
 
     .project-wrap {
@@ -798,7 +940,7 @@ textarea {
     }
 
     .latest-works-gallery {
-        width: 100%;
+        width: fit-content;
         flex-direction: column;
         margin: 0 1.5rem;
     }
