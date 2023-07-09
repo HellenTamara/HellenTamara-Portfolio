@@ -28,7 +28,7 @@ li {
 }
 
 .lang-eng {
-
+    display: block;
 }
 
 .lang-pt {
@@ -368,7 +368,7 @@ li {
 .layer-gallery {
     position: absolute;
     display: flex;
-    width: 100vw;
+    width: 100%;
 }
 
 .arrow-wrap {
@@ -713,30 +713,33 @@ textarea {
 
     /* Mobile Menu */
 
-   .show {
-    visibility: visible;
-    opacity: 1;
-   }
-   
+    .show {
+        transform: translateX(0);  
+    }
+
+    .hide {
+        transform: translateX(100%); 
+    }
+
+
     .vertical-menu {
-        visibility: hidden;
-        opacity: 0;
         display: block;
-        position: absolute;
+        transition: transform 0.2s;
+        position: fixed;
         right: 0;
         top: 0;
         height: 100vh;
         width: 50%;
         background-color: var(--white-color);
-        z-index: 1000;
+        z-index: 11;
     }
 
-    nav .navbar-list {
+    .navbar-list {
        display: flex;
        flex-direction: column;
        justify-content: start;
        align-items: start;
-       margin: 4.6rem 0 0 2rem;
+       margin: 4.6rem 3rem 0 2rem;
     }
 
     .menu-icon {
@@ -798,7 +801,7 @@ textarea {
 
     .menu-wrapper {
         visibility: visible;
-        z-index: 3;
+        z-index: 13;
     }
 
         /* End of Mobile Menu */
@@ -825,13 +828,12 @@ textarea {
     }
 
     .latest-work-title,
-    .latest-work-text,
-    .latest-works-gallery {
+    .latest-work-text {
         margin: 0 0 0 3rem;
     }
 
-    .layer-gallery {
-        display: none;
+    .latest-works-gallery {
+        margin: 0 0 0 3rem;
     }
 
     .project-wrap {
@@ -855,13 +857,12 @@ textarea {
         margin: 0;
     }
 
-    .footer ul {
+    .footer .navbar-list {
         visibility: visible;
+        padding: 0;
+        flex-direction: row;
     }
 
-    .navbar-list {
-        padding: 0;
-    }
 
     .nav-item {
         margin: 0 2.5rem;
@@ -888,6 +889,7 @@ textarea {
     .heading-right {
         margin: 0 1.3rem 0 3rem;
     }
+    
 
 }
 
@@ -896,9 +898,19 @@ textarea {
         font-size: 4rem;
     }
 
+    .vertical-menu {
+        width: 75%;
+        height: 100%;
+    }
+
     .navbar-list {
         display: flex;
         flex-direction: column;
+        padding: 0;
+    }
+
+    .layer-gallery {
+        display: none;
     }
 
     .logo {
@@ -940,14 +952,14 @@ textarea {
     }
 
     .latest-works-gallery {
-        width: fit-content;
+        width: 95%;
         flex-direction: column;
-        margin: 0 1.5rem;
+        margin: 0 0 0  1.5rem;
     }
 
     .project-wrap {
         height: 30rem;
-        width: 90%;
+        width: 95%;
     }
 
     .project-2 {
