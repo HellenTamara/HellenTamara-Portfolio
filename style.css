@@ -68,7 +68,13 @@ li {
 .language {
     display: flex;
     margin-left: 3.53rem;
+    align-items: center;
     cursor: pointer;
+}
+
+.dropdown {
+    display: inline-block; 
+    position: relative; 
 }
 
 .language .nav-item {
@@ -84,21 +90,20 @@ li {
     margin: 2px;
 }
 
-
 .language-block {
     display: none;
     position: absolute;
-    right: 5rem;
-    top: 3.5rem;
-    width: 150px;
-    height: 80px;
+    top: 1.5rem;
+    width: 100%;
+    height: 40px;
+    padding-left: 0.5rem;
+    align-items: center;
 }
-
 
 .bubble {
     height: 400px;
 	position: absolute;
-    top: 2rem;
+    top: 1rem;
     right: 1rem;
 	display: block;
 	text-align: center;
@@ -107,7 +112,7 @@ li {
 	line-height: 1.3em;
 	background-color: #fff;
 	color: #000;
-	padding-top: 1px;
+	
 	box-shadow: 0 -4px #fff, 
 				0 -7px #000, 
 				4px 0 #fff, 
@@ -162,10 +167,11 @@ li {
 
 .bubble ul{ 
     padding: 0;
+    margin: 0;
 }
 
 
-.language:hover .language-block{
+.dropdown:hover .language-block{
     display: block;
 }
 
@@ -638,6 +644,7 @@ textarea {
 
 /* Responsive */
 
+/* Largest Size */
 @media (min-width: 1279px) {
     .navbar {
         width: 1093px;
@@ -695,9 +702,9 @@ textarea {
     .menu-icon {
         visibility: hidden;
     }
-
 }
 
+/* Tablet Size */
 @media (max-width: 1008px) {
     html {
         font-size: 90%;
@@ -720,7 +727,6 @@ textarea {
     .hide {
         transform: translateX(100%); 
     }
-
 
     .vertical-menu {
         display: block;
@@ -757,7 +763,18 @@ textarea {
     }
 
     .language {
-        margin: 1.5rem 0;
+        margin-top: 1.5rem;
+    }
+
+    .language li a {
+        height: 40px;
+        margin-right: 1.5rem;
+    }
+
+
+    .dropdown {
+        height: auto;
+        margin: 0;
     }
 
     .ai-globe {
@@ -767,7 +784,7 @@ textarea {
 
     .ai-triangle-down-fill {
         position: absolute;
-        margin-left: 6rem;
+        margin-left: 7rem;
         font-size: 1.5rem;
         padding-top: 1.3rem;
     }
@@ -784,7 +801,10 @@ textarea {
     .language-block {
         display: block;
         position: relative;
-        top: 2rem;
+        height: auto;
+        top: 0;
+        left: 4rem;
+
     }    
 
     .bubble {
@@ -872,7 +892,7 @@ textarea {
 
     .email {
         position: absolute;
-        display: none;
+        visibility: hidden;
     }
 
 }

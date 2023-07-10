@@ -42,7 +42,18 @@ $(document).ready(function () {
     });
 });
 
+// Language 
+$(document).ready(function () {
+    $(".language-block").click(function (e) {
+        e.stopPropagation();
+        const lang = $(".lang-pt").css("display");
+        if (lang == "none") {
+            $(".lang-pt").css("display", "block");
+            $(".lang-eng").css("display", "none");
+        } else {
+            $(".lang-pt").css("display", "none");
+            $(".lang-eng").css("display", "block");
+        } 
 
-
-
-
+    });
+});
