@@ -723,6 +723,15 @@ input.main-rec {
     .menu-icon {
         visibility: hidden;
     }
+
+    .form-close-btn {
+        position: absolute;
+        right: 3rem;
+        top: 1.5rem;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
 }
 
 /* Tablet Size */
@@ -888,6 +897,13 @@ input.main-rec {
     .window-wrapper {
         width: 49rem;
         height: 70rem;
+    }
+
+    .form-close-btn {
+        position: absolute;
+        right: 5rem;
+        top: 2rem;
+        font-size: 2rem;
     }
 
     .window-heading {
@@ -1113,15 +1129,23 @@ input.main-rec {
         transform: translate(-50%, -50%);
     }
 
+    .form-close-btn {
+        position: absolute;
+        right: 25px;
+        top: 0.5rem;
+        font-size: 1.5rem;
+    }
+
     .window-heading {
         position: absolute;
         text-align: center;
         width: 80%;
-        height: 110px;
+        margin-bottom: 1rem;
+        height: 120px;
         left: 50%;
         transform: translate(-50%, -50%);
-        top: 2rem;
-        font-size: 3.7rem;
+        top: 2.6rem;
+        font-size: 3.2rem;
         letter-spacing: 5px;
         line-height: 40px;
     }
@@ -1157,6 +1181,7 @@ input.main-rec {
         width: 20rem;
         right: 1rem;
         top: 20rem;
+        color: #000;
     }
     
     .form-btn .rec-1 {

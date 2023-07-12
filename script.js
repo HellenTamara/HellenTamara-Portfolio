@@ -19,6 +19,11 @@ $(document).ready(function () {
     $(".vertical-menu").click(function (e) {
         e.stopPropagation();
     });
+
+    $(".form-close-btn").click(function () {
+        $(".window-overlay").fadeOut();
+        $(".window-wrapper").removeClass("change");
+    });
 });
 
 
@@ -39,6 +44,11 @@ $(document).ready(function () {
 
     $(".window-wrapper").click(function (e) {
         e.stopPropagation();
+    });
+
+    $(".form-close-btn").click(function () {
+        $(".window-overlay").fadeOut();
+        $(".window-wrapper").removeClass("change");
     });
 });
 
