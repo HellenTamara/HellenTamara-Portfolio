@@ -46,22 +46,22 @@
                         <li> <i class="ai-link-out menu-icon"></i><a class="nav-item"
                                 href="https://github.com/HellenTamara">GitHub</a></li>
 
-                    <div class="dropdown">
-                        <div class="language">
-                            <i class="ai-globe"></i>
-                            <li><a class="nav-item lang-pt lang" href="#">PT</a></li>
-                            <li><a class="nav-item lang-eng lang" href="#">EN</a></li>
-                            <i class="ai-triangle-down-fill"></i>
-                        </div>
-                        <div class="language-block">
-                            <div class="bubble mini top">
-                                <ul>
-                                    <li><a class="nav-item lang-eng lang" href="#">Português</a></li>
-                                    <li><a class="nav-item lang-pt lang" href="#">English</a></li>
-                                </ul>
+                        <div class="dropdown">
+                            <div class="language">
+                                <i class="ai-globe"></i>
+                                <li><a class="nav-item lang-pt lang" href="#">PT</a></li>
+                                <li><a class="nav-item lang-eng lang" href="#">EN</a></li>
+                                <i class="ai-triangle-down-fill"></i>
+                            </div>
+                            <div class="language-block">
+                                <div class="bubble mini top">
+                                    <ul>
+                                        <li><a class="nav-item lang-eng lang" href="#">Português</a></li>
+                                        <li><a class="nav-item lang-pt lang" href="#">English</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     </ul>
                 </div>
             </div>
@@ -163,28 +163,46 @@
     <div class="window-overlay"></div>
     <div class="window-wrapper">
         <div class="window-left">
-            <p class="window-heading lang-eng">I will reach you out soon!</p>
+            <p class="window-heading lang-eng">I'll reach out to you soon!</p>
             <p class="window-heading lang-pt">Entrarei em contato em breve!</p>
-            <p class="window-text">enquanto isso, confira minhas redes sociais...</p>
+            <p class="window-text lang-pt">enquanto isso, confira minhas redes...</p>
+            <p class="window-text lang-eng">meanwhile, check on my socials...</p>
             <i class="ai-github-fill"><a href="#"></a></i>
             <div class="icon-wrap"></div>
             <i class="ai-linkedin-fill"><a href="#"></a></i>
         </div>
         <div class="window-right">
             <form id="contact-form">
-                <label for="fullname lang-eng">Full Name</label>
-                <label for="fullname lang-pt">Full Name</label>
+                <label for="fullname" class="lang-eng">Full Name</label>
+                <label for="fullname" class="lang-pt">Nome Completo</label>
                 <input type="text" id="fullname" name="fullname" required>
 
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="message lang-eng">Message</label>
-                <label for="message lang-pt">Mensagem</label>
-                <textarea id="message" name="message" required></textarea>
+                <label for="message" class="lang-eng">Message</label>
+                <label for="message" class="lang-pt">Mensagem</label>
+                <textarea id="message" name="message" required
+                    class="lang-eng">Hi I’m [] and I am interested in talking to you more! Let’s get in touch!</textarea>
+                <textarea id="message" name="message" required
+                    class="lang-pt">Olá, meu nome é [] e gostaria de conversar mais com você. Vamos nos conectar!</textarea>
 
-                <button type="submit" class="lang-eng">Send</button>
-                <button type="submit" class="lang-pt">Send</button>
+                <input type="submit" class="main-rec lang-eng" value="Send">
+                <div class="form-btn lang-eng">
+                    <div class="rec-1"></div>
+                    <div class="rec-2"></div>
+                    <div class="rec-3"></div>
+                    <div class="rec-4"></div>
+                </div>
+                </input>
+                <input type="submit" class="main-rec lang-pt" value="Enviar">
+                <div class="form-btn lang-pt">
+                    <div class="rec-1"></div>
+                    <div class="rec-2"></div>
+                    <div class="rec-3"></div>
+                    <div class="rec-4"></div>
+                </div>
+                </input>
             </form>
         </div>
     </div>
