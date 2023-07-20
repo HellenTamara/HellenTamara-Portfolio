@@ -67,3 +67,48 @@ $(document).ready(function () {
 
     });
 });
+
+// I'm feeling lucky button
+
+$(document).ready(function () {
+    $(".lucky-btn").click(function () {
+        let number = 1 + Math.floor(Math.random() * 3);
+        let randomLink = `.arrow-wrap-${number} a:first`; 
+        let linkElement = $(randomLink);
+        
+        if (linkElement.length) {
+            linkElement[0].click();
+        }
+    });
+});
+
+// Projects slide
+
+$(document).ready(function () {
+    const carouselWrapper = $(".carousel-wrapper");
+    const cardWidth = $(".arrow-wrap").outerWidth(true); // Get the width including margin
+    const cardsCount = $(".arrow-wrap").length;
+    const carouselWidth = cardWidth * cardsCount;
+  
+    // Set the carousel width to accommodate all cards in a single row
+    carouselWrapper.css("width", carouselWidth + "px");
+  
+    let currentPosition = 0;
+  
+    function moveCarousel() {
+      carouselWrapper.css("transform", `translateX(${(-currentPosition * cardWidth)}px)`);
+    }
+  
+    // Previous Button Click
+    $(".projects-left-btn").on("click", function () {
+      currentPosition = (currentPosition - 1 + cardsCount) % cardsCount;
+      moveCarousel();
+    });
+  
+    // Next Button Click
+    $(".projects-right-btn").on("click", function () {
+      currentPosition = (currentPosition + 1) % cardsCount;
+      moveCarousel();
+    });
+  });
+  

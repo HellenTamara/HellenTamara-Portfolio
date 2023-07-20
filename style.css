@@ -358,6 +358,7 @@ li {
     position: relative;
     margin: 0 0 0 5.31rem;
     display: flex;
+    overflow: hidden;
 
 }
 
@@ -399,11 +400,9 @@ li {
     opacity: 1;
 }
 
-.arrow-wrap-1 {
-    z-index: 2;
-}
-
-.arrow-wrap-2 {
+.arrow-wrap-1,
+.arrow-wrap-2,
+.arrow-wrap-3 {
     z-index: 2;
 }
 
@@ -506,7 +505,7 @@ li {
     width: 320px;
     height: 133px;
     left: 50px;
-    top:0.5rem;
+    top: 0.5rem;
 
     font-family: "VT323";
     font-style: normal;
@@ -663,6 +662,94 @@ input.main-rec {
     width: 0 auto;
 }
 
+/* Workshop Page */
+
+/* Workshop Header */
+.workshop-header {
+    position: relative;
+    overflow: hidden;
+    height: 70vh;
+    margin: 3rem 5.31rem 0 5.31rem;
+    border-radius: 2.75rem;
+    background-color: #F2F1ED;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.workshop-title {
+    font-family: "VT323";
+    font-size: 7rem;
+    width: 50%;
+    margin: 2rem 0 0 5.31rem;
+}
+
+.workshop-img {
+    position: absolute;
+    bottom: 0;
+    right: -1rem;
+    width: 35rem;
+}
+
+.lucky-btn {
+    margin: 4.5rem 0 0 5.31rem;
+}
+
+.lucky-btn p {
+    width: 100%;
+    height: 70%;
+}
+
+.lucky-btn .main-rec {
+    position: absolute;
+    width: 20rem;
+    height: 3.62rem;
+    cursor: pointer;
+}
+
+.lucky-btn .rec-1 {
+    position: relative;
+    right: 0;
+    top: 0;
+}
+
+/* Workshop All Websites */
+
+.all-websites-title {
+    font-family: "VT323";
+    font-size: 7rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.all-websites .latest-works-gallery,
+.all-websites .layer-gallery {
+    margin: 0;
+}
+
+.all-websites .project-wrap,
+.all-websites .arrow-wrap {
+    height: 21rem;
+}
+
+.all-websites .project-1,
+.all-websites .arrow-wrap-1 {
+    margin: 0 1rem 0 5.31rem;
+}
+
+.all-websites .project-2,
+.all-websites .arrow-wrap-2 {
+    margin: 0 1rem;
+}
+
+.all-websites .project-3,
+.all-websites .arrow-wrap-3 {
+    margin: 0 5.31rem 0 1rem;
+}
+
+.all-websites .button-style {
+    margin: 6rem auto;
+}
+
+
 /* Responsive */
 
 /* Largest Size */
@@ -717,6 +804,57 @@ input.main-rec {
         width: 1093px;
         margin: 0 auto;
     }
+
+    /* Workshop Page */
+
+    .workshop-header {
+        height: 630px;
+        width: 1093px;
+        margin: 3rem auto 0 auto;
+    }
+
+    .all-websites .latest-works-gallery,
+    .all-websites .layer-gallery {
+        width: 1093px;
+        margin: 0 auto;
+    }
+
+    .all-websites .arrow-wrap {
+        margin: 0;
+        width: 345px;
+    }
+
+    .all-websites .project-wrap,
+    .all-websites .arrow-wrap {
+        height: 21rem;
+    }
+
+    .all-websites .project-1 {
+        margin: 0 1rem 0 0;
+    }
+
+    .all-websites .project-2 {
+        margin: 0 1rem;
+    }
+
+    .all-websites .project-3 {
+        margin: 0 0 0 1rem;
+    }
+
+    .all-websites .arrow-wrap-2 {
+        position: absolute;
+        left: 23.5rem;
+    }
+
+    .all-websites .arrow-wrap-3 {
+        position: absolute;
+        right: 0;
+    }
+
+    .controls img {
+        display: none;
+    }
+
 }
 
 @media (min-width: 1009px) {
@@ -730,6 +868,10 @@ input.main-rec {
         top: 1.5rem;
         font-size: 2rem;
         cursor: pointer;
+    }
+
+    .controls img {
+        display: none;
     }
 
 }
@@ -948,22 +1090,22 @@ input.main-rec {
         right: 12rem;
         top: 34rem;
     }
-    
+
     .form-btn .rec-1 {
         top: 37.52rem;
         left: 16.02rem;
     }
-    
+
     .form-btn .rec-2 {
         top: 35rem;
         left: 29.1rem;
     }
-    
+
     .form-btn .rec-3 {
         top: 37.52rem;
         left: 29.1rem;
     }
-    
+
     .form-btn .rec-4 {
         top: 35rem;
         left: 16.02rem;
@@ -1030,6 +1172,10 @@ input.main-rec {
         visibility: hidden;
     }
 
+    .controls img {
+        display: none;
+    }
+
 }
 
 @media (max-width: 808px) {
@@ -1044,7 +1190,6 @@ input.main-rec {
     .heading-right {
         margin: 0 1.3rem 0 3rem;
     }
-
 
 }
 
@@ -1183,22 +1328,22 @@ input.main-rec {
         top: 20rem;
         color: #000;
     }
-    
+
     .form-btn .rec-1 {
         top: 23.58rem;
         left: 0rem;
     }
-    
+
     .form-btn .rec-2 {
         top: 21rem;
-        left:19.55rem;
+        left: 19.55rem;
     }
-    
+
     .form-btn .rec-3 {
         top: 23.58rem;
         left: 19.55rem;
     }
-    
+
     .form-btn .rec-4 {
         top: 21rem;
         left: 0rem;
@@ -1230,7 +1375,7 @@ input.main-rec {
         margin: 12px 0;
         width: 50px;
         height: 50px;
-        
+
     }
 
     .window-left i:last-child {
@@ -1257,5 +1402,111 @@ input.main-rec {
     .footer .nav-item {
         margin: 0 1rem;
         font-size: 1rem;
+    }
+
+    /* Workshop Page */
+
+    .workshop-header {
+        height: 450px;
+        margin: 2rem 1rem 0 1rem;
+    }
+
+    .workshop-title {
+        font-size: 4rem;
+        font-weight: 700;
+        width: 90%;
+        margin: 1rem 0 0 2rem;
+    }
+
+    .workshop-img {
+        width: 21rem;
+    }
+
+    .lucky-btn {
+        margin: 1rem 0 0 2rem;
+    }
+
+    .lucky-btn p {
+        width: 100%;
+        height: 70%;
+        font-size: 1.3rem;
+    }
+
+    .lucky-btn .main-rec {
+        width: 15rem;
+        height: 2.8rem;
+    }
+
+    /* Workshop All Websites */
+    .all-websites-title {
+        font-size: 4rem;
+        margin: 7rem auto 4rem auto;
+    }
+
+    .all-websites .latest-works-gallery {
+        margin: 0 auto;
+    }
+
+    .controls img {
+        position: absolute;
+        display: block;
+        width: 2rem;
+        margin: 6rem 1% 0 1%;
+        transition: transform 0.2s;
+        z-index: 2;
+    }
+
+    .controls img:first-of-type {
+        right: 0;
+    }
+
+    .carousel-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .carousel-wrapper {
+        display: flex;
+        transition: all 0.5s ease;
+    }
+
+    .all-websites .project-title {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .all-websites .project-wrap img {
+        margin-top: 0.5rem;
+    }
+
+    .all-websites .project-technologies {
+        font-size: 1rem;
+    }
+
+    .all-websites .project-wrap {
+        flex: 0 0 300px;
+    }
+
+    .all-websites .project-1 {
+        margin-left: 3rem;
+
+    }
+
+    .all-websites .project-2 {
+        margin: 0 3rem;
+
+    }
+
+    .all-websites .project-3 {
+        margin: 0;
+
+    }
+
+    .all-websites .button-style {
+        margin: 4rem auto;
+    }
+
+    .all-websites .main-rec {
+        height: 3.3rem;
     }
 }
