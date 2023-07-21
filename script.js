@@ -82,7 +82,7 @@ $(document).ready(function () {
     });
 });
 
-// Projects slide
+// Workshop Page Projects Controls
 
 $(document).ready(function () {
     const leftControl = document.querySelector('.projects-left-btn');
@@ -92,21 +92,20 @@ $(document).ready(function () {
     let axisX = 0
 
     rightControl.addEventListener('click', () => {
-        carousel.style.transform = `translatex(${axisX -= 324}px)`
-        if (axisX < -649) {
-            carousel.style.transform = `translatex(${axisX = 0}px)`
+        carousel.style.transform = `translatex(${axisX -= 100}vw)`
+        if (axisX < -299) {
+            carousel.style.transform = `translatex(${axisX = 0}vw)`
           }
     })
 
     leftControl.addEventListener('click', () => {
-        carousel.style.transform = `translatex(${axisX += 324}px)`
+        carousel.style.transform = `translatex(${axisX += 100}vw)`
         if (axisX > 0) {
-            carousel.style.transform = `translatex(${axisX = -648}px)`
+            carousel.style.transform = `translatex(${axisX = -200}vw)`
           }
     });
-
-
-
-
 });
+
+// Workshop Page Projects Slide
+
 
