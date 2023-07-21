@@ -52,6 +52,22 @@ $(document).ready(function () {
     });
 });
 
+// Projects
+$(document).ready(function () {
+    $('.project-1').on('click', function () {
+        const linkedURL = $('.arrow-wrap-1 a').attr('href');
+        window.location.href = linkedURL;
+    });
+    $('.project-2').on('click', function () {
+        const linkedURL = $('.arrow-wrap-2 a').attr('href');
+        window.location.href = linkedURL;
+    });
+    $('.project-3').on('click', function () {
+        const linkedURL = $('.arrow-wrap-3 a').attr('href');
+        window.location.href = linkedURL;
+    });
+});
+
 // Language 
 $(document).ready(function () {
     $(".language-block").click(function (e) {
@@ -85,27 +101,23 @@ $(document).ready(function () {
 // Workshop Page Projects Controls
 
 $(document).ready(function () {
-    const leftControl = document.querySelector('.projects-left-btn');
-    const rightControl = document.querySelector('.projects-right-btn');
-    const carousel = document.querySelector('.carousel-container');
+    const $leftControl = $('.projects-left-btn');
+    const $rightControl = $('.projects-right-btn');
+    const $carousel = $('.carousel-container');
 
-    let axisX = 0
+    let axisX = 0;
 
-    rightControl.addEventListener('click', () => {
-        carousel.style.transform = `translatex(${axisX -= 100}vw)`
+    $rightControl.on('click', function () {
+        $carousel.css('transform', `translateX(${axisX -= 100}vw)`);
         if (axisX < -299) {
-            carousel.style.transform = `translatex(${axisX = 0}vw)`
-          }
-    })
+            $carousel.css('transform', `translateX(${axisX = 0}vw)`);
+        }
+    });
 
-    leftControl.addEventListener('click', () => {
-        carousel.style.transform = `translatex(${axisX += 100}vw)`
+    $leftControl.on('click', function () {
+        $carousel.css('transform', `translateX(${axisX += 100}vw)`);
         if (axisX > 0) {
-            carousel.style.transform = `translatex(${axisX = -200}vw)`
-          }
+            $carousel.css('transform', `translateX(${axisX = -200}vw)`);
+        }
     });
 });
-
-// Workshop Page Projects Slide
-
-

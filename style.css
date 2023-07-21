@@ -662,10 +662,10 @@ input.main-rec {
     width: 0 auto;
 }
 
-/* Workshop Page */
+/* Works Page */
 
-/* Workshop Header */
-.workshop-header {
+/* Works Header */
+.works-header {
     position: relative;
     overflow: hidden;
     height: 70vh;
@@ -675,14 +675,14 @@ input.main-rec {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.workshop-title {
+.works-title {
     font-family: "VT323";
     font-size: 7rem;
     width: 50%;
     margin: 2rem 0 0 5.31rem;
 }
 
-.workshop-img {
+.works-img {
     position: absolute;
     bottom: 0;
     right: -1rem;
@@ -711,7 +711,7 @@ input.main-rec {
     top: 0;
 }
 
-/* Workshop All Websites */
+/* Work Page All Websites */
 
 .all-websites-title {
     font-family: "VT323";
@@ -808,9 +808,9 @@ input.main-rec {
         margin: 0 auto;
     }
 
-    /* Workshop Page */
+    /* Works Page */
 
-    .workshop-header {
+    .works-header {
         height: 630px;
         width: 1093px;
         margin: 3rem auto 0 auto;
@@ -1412,25 +1412,27 @@ input.main-rec {
         font-size: 1rem;
     }
 
-    /* Workshop Page */
+    /* Work Page */
 
-    .workshop-header {
+    .works-header {
         height: 450px;
         margin: 2rem 1rem 0 1rem;
     }
 
-    .workshop-title {
+    .works-title {
         font-size: 4rem;
         font-weight: 700;
         width: 90%;
         margin: 1rem 0 0 2rem;
     }
 
-    .workshop-img {
+    .works-img {
         width: 21rem;
     }
 
     .lucky-btn {
+        width: 15rem;
+        height: 2.8rem;
         margin: 1rem 0 0 2rem;
     }
 
@@ -1445,7 +1447,35 @@ input.main-rec {
         height: 2.8rem;
     }
 
-    /* Workshop All Websites */
+    .lucky-btn .rec-1 {
+        background: #F2F1ED;
+        position: relative;
+        top: 2.35rem;
+        left: 0;
+    }
+
+    .lucky-btn .rec-2 {
+        background: #F2F1ED;
+        position: relative;
+        top: -0.45rem;
+        left: 14.55rem;
+    }
+
+    .lucky-btn .rec-3 {
+        background: #F2F1ED;
+        position: relative;
+        top: 1.47rem;
+        left: 14.55rem;
+    }
+
+    .lucky-btn .rec-4 {
+        background: #F2F1ED;
+        position: relative;
+        bottom: 1.35rem;
+        left: 0;
+    }
+
+    /* Work Page All Websites */
     .all-websites-title {
         font-size: 4rem;
         margin: 7rem auto 4rem auto;
@@ -1515,5 +1545,13 @@ input.main-rec {
 
     .all-websites .main-rec {
         height: 3.3rem;
+    }
+
+    .all-websites .rec-1{
+        bottom: 0.34rem;
+    }
+
+    .all-websites .rec-3{
+        bottom: 0.34rem;
     }
 }
