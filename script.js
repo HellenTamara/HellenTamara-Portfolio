@@ -63,7 +63,7 @@ $(document).ready(function () {
         } else {
             $(".lang-pt").css("display", "none");
             $(".lang-eng").css("display", "block");
-        } 
+        }
 
     });
 });
@@ -73,9 +73,9 @@ $(document).ready(function () {
 $(document).ready(function () {
     $(".lucky-btn").click(function () {
         let number = 1 + Math.floor(Math.random() * 3);
-        let randomLink = `.arrow-wrap-${number} a:first`; 
+        let randomLink = `.arrow-wrap-${number} a:first`;
         let linkElement = $(randomLink);
-        
+
         if (linkElement.length) {
             linkElement[0].click();
         }
@@ -85,30 +85,28 @@ $(document).ready(function () {
 // Projects slide
 
 $(document).ready(function () {
-    const carouselWrapper = $(".carousel-wrapper");
-    const cardWidth = $(".arrow-wrap").outerWidth(true); // Get the width including margin
-    const cardsCount = $(".arrow-wrap").length;
-    const carouselWidth = cardWidth * cardsCount;
-  
-    // Set the carousel width to accommodate all cards in a single row
-    carouselWrapper.css("width", carouselWidth + "px");
-  
-    let currentPosition = 0;
-  
-    function moveCarousel() {
-      carouselWrapper.css("transform", `translateX(${(-currentPosition * cardWidth)}px)`);
-    }
-  
-    // Previous Button Click
-    $(".projects-left-btn").on("click", function () {
-      currentPosition = (currentPosition - 1 + cardsCount) % cardsCount;
-      moveCarousel();
+    const leftControl = document.querySelector('.projects-left-btn');
+    const rightControl = document.querySelector('.projects-right-btn');
+    const carousel = document.querySelector('.carousel-container');
+
+    let axisX = 0
+
+    rightControl.addEventListener('click', () => {
+        carousel.style.transform = `translatex(${axisX -= 324}px)`
+        if (axisX < -649) {
+            carousel.style.transform = `translatex(${axisX = 0}px)`
+          }
+    })
+
+    leftControl.addEventListener('click', () => {
+        carousel.style.transform = `translatex(${axisX += 324}px)`
+        if (axisX > 0) {
+            carousel.style.transform = `translatex(${axisX = -648}px)`
+          }
     });
-  
-    // Next Button Click
-    $(".projects-right-btn").on("click", function () {
-      currentPosition = (currentPosition + 1) % cardsCount;
-      moveCarousel();
-    });
-  });
-  
+
+
+
+
+});
+

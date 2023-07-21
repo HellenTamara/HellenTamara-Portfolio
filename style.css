@@ -720,6 +720,10 @@ input.main-rec {
     margin-bottom: 4rem;
 }
 
+.carousel-container {
+    display: flex;
+}
+
 .all-websites .latest-works-gallery,
 .all-websites .layer-gallery {
     margin: 0;
@@ -783,7 +787,6 @@ input.main-rec {
     .latest-works-gallery {
         width: 1093px;
         margin: 0 auto;
-        display: flex;
     }
 
     .arrow-wrap-2 {
@@ -813,15 +816,17 @@ input.main-rec {
         margin: 3rem auto 0 auto;
     }
 
+
+
     .all-websites .latest-works-gallery,
     .all-websites .layer-gallery {
-        width: 1093px;
+        width: 1095px;
         margin: 0 auto;
     }
 
     .all-websites .arrow-wrap {
         margin: 0;
-        width: 345px;
+        width: 344px;
     }
 
     .all-websites .project-wrap,
@@ -831,14 +836,17 @@ input.main-rec {
 
     .all-websites .project-1 {
         margin: 0 1rem 0 0;
+        width: 344px;
     }
 
     .all-websites .project-2 {
         margin: 0 1rem;
+        width: 344px;
     }
 
     .all-websites .project-3 {
         margin: 0 0 0 1rem;
+        width: 344px;
     }
 
     .all-websites .arrow-wrap-2 {
@@ -1447,6 +1455,7 @@ input.main-rec {
         margin: 0 auto;
     }
 
+
     .controls img {
         position: absolute;
         display: block;
@@ -1461,12 +1470,8 @@ input.main-rec {
     }
 
     .carousel-container {
-        width: 100%;
+        width: fit-content;
         margin: 0 auto;
-    }
-
-    .carousel-wrapper {
-        display: flex;
         transition: all 0.5s ease;
     }
 
@@ -1479,26 +1484,20 @@ input.main-rec {
         margin-top: 0.5rem;
     }
 
+    .all-websites .project-wrap {
+        width: 18rem;
+        height: 18rem;
+    }
+
     .all-websites .project-technologies {
         font-size: 1rem;
     }
 
-    .all-websites .project-wrap {
-        flex: 0 0 300px;
-    }
-
-    .all-websites .project-1 {
-        margin-left: 3rem;
-
-    }
-
-    .all-websites .project-2 {
-        margin: 0 3rem;
-
-    }
-
-    .all-websites .project-3 {
-        margin: 0;
+    .all-websites .project-1,
+    .all-websites .project-2,
+    .all-websites .project-3
+    {
+        margin-left: 3.5rem;
 
     }
 
