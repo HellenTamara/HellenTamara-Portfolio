@@ -52,7 +52,7 @@ $(document).ready(function () {
     });
 });
 
-// Projects
+// Projects Redirecting Links
 $(document).ready(function () {
     $('.project-1').on('click', function () {
         const linkedURL = $('.arrow-wrap-1 a').attr('href');

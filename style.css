@@ -691,24 +691,51 @@ input.main-rec {
 
 .lucky-btn {
     margin: 4.5rem 0 0 5.31rem;
+    width: 20rem;
+    height: 3.62rem;
 }
 
 .lucky-btn p {
     width: 100%;
-    height: 70%;
+    height: 80%;
 }
 
 .lucky-btn .main-rec {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 20rem;
     height: 3.62rem;
     cursor: pointer;
 }
 
 .lucky-btn .rec-1 {
+    background: #F2F1ED;
     position: relative;
-    right: 0;
-    top: 0;
+    left: 0;
+    top: 3.2rem;
+}
+
+.lucky-btn .rec-2 {
+    background: #F2F1ED;
+    position: relative;
+    left: 19.55rem;
+    bottom: 0.43rem;
+}
+
+.lucky-btn .rec-3 {
+    background: #F2F1ED;
+    position: relative;
+    left: 19.55rem;
+    top: 2.3rem;
+}
+
+.lucky-btn .rec-4 {
+    background: #F2F1ED;
+    position: relative;
+    left: 0;
+    bottom: 1.3rem;
 }
 
 /* Work Page All Websites */
@@ -1448,29 +1475,21 @@ input.main-rec {
     }
 
     .lucky-btn .rec-1 {
-        background: #F2F1ED;
-        position: relative;
         top: 2.35rem;
         left: 0;
     }
 
     .lucky-btn .rec-2 {
-        background: #F2F1ED;
-        position: relative;
         top: -0.45rem;
         left: 14.55rem;
     }
 
     .lucky-btn .rec-3 {
-        background: #F2F1ED;
-        position: relative;
         top: 1.47rem;
         left: 14.55rem;
     }
 
     .lucky-btn .rec-4 {
-        background: #F2F1ED;
-        position: relative;
         bottom: 1.35rem;
         left: 0;
     }
