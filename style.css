@@ -786,6 +786,61 @@ input.main-rec {
 }
 
 /* Project Page */
+.website-top-part {
+    margin: 3rem 5.31rem;
+}
+
+.website-title {
+    text-decoration: none;
+    color: var(--black-color);
+    font-family: "VT323";
+    font-size: 7rem;
+    cursor: pointer;
+}
+
+.website-description {
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+.website-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.website-info {
+    margin: 3rem 0;
+    width: 28%;
+    font-size: 1rem;
+}
+
+.division {
+    width: 100%;
+    border: var(--black-color) 2px solid; 
+}
+
+.website-mock {
+    height: 80vh;
+    background-color: #F3F1EE;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.website-mock img {
+    width: 70%;
+}
+
+.latest-work-wrap.website-latest-works {
+    background-color: var(--white-color);
+}
+
+.contact-wrapper.website-latest-works {
+    background-color: #F3F1EE;
+}
 
 
 /* Responsive */
@@ -896,6 +951,16 @@ input.main-rec {
 
     .controls img {
         display: none;
+    }
+
+    /* Website Page */
+    .website-top-part {
+        width: 1093px;
+        margin: 0 auto;
+    }
+
+    .website-mock img {
+        width: 50rem;
     }
 
 }
@@ -1272,6 +1337,29 @@ input.main-rec {
     .all-websites .project-technologies {
         font-size: 100%;
     }
+
+    /* Website Page */
+    .website-mock img {
+        width: 80%;
+    }
+
+    .website-mock .main-rec {
+        width: 12rem;
+        height: 3.2rem;
+        padding-top: 0.3rem;
+    }
+
+    .website-mock .rec-1 {
+        bottom: 0.44rem;
+    }
+
+    .website-mock .rec-2  {
+        left: 11.55rem;
+    }
+    .website-mock .rec-3  {
+        left: 11.55rem;
+        bottom: 0.44rem;
+    }
 }
 
 @media (max-width: 808px) {
@@ -1610,8 +1698,6 @@ input.main-rec {
         transition: all 0.5s ease;
     }
 
-
-
     .project-wrap {
         width: 100%;
         display: flex;
@@ -1662,5 +1748,64 @@ input.main-rec {
         bottom: 0.34rem;
     }
 
+    /* Website Page */
+    .website-top-part {
+        margin: 3rem 1rem 0 1rem;
+        width: 96%;
+    }
+    
+    .website-title {
+        font-size: 5rem;
+    }
+    
+    .website-description {
+        letter-spacing: 2px;
+        font-size: 1.3rem;
+        margin-top: 1rem;
+    }
+    
+    .website-info-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .website-info {
+        margin: 0.8rem 0;
+        width: 96%;
+        line-height: 0.8rem;
+        font-size: 1.2rem;
+    }
+    
+    .website-mock {
+        height: 50vh;
+        background-color: var(--white-color);
+    }
+    
+    .website-mock img {
+        width: 100%;
+    }
 
+    .website-mock .button-style,
+    .website-mock .main-rec
+    {
+        width: 96%;
+        padding-top: 0;
+    }
+
+    .website-mock .rec-2 {
+        left: 25.16rem;
+    }
+
+    .website-mock .rec-3 {
+        left: 25.16rem;
+        top: 2.75rem;
+    }
+    
+    .latest-work-wrap.website-latest-works {
+        background-color: #F3F1EE;
+    }
+    
+    .contact-wrapper.website-latest-works {
+        background-color: var(--white-color);
+    }
 }
