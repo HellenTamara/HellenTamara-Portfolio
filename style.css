@@ -785,6 +785,9 @@ input.main-rec {
     margin: 6rem auto;
 }
 
+/* Project Page */
+
+
 /* Responsive */
 
 /* Largest Size */
@@ -1527,6 +1530,10 @@ input.main-rec {
     .works-header {
         height: 450px;
         margin: 2rem 1rem 0 1rem;
+    }
+
+    .lang-pt.works-title{
+        font-size: 3.2rem;
     }
 
     .works-title {
