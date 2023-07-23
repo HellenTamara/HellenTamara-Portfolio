@@ -1339,6 +1339,10 @@ input.main-rec {
     }
 
     /* Website Page */
+    .website-mock {
+        height: 55vh;
+    }
+
     .website-mock img {
         width: 80%;
     }
@@ -1788,17 +1792,22 @@ input.main-rec {
     .website-mock .button-style,
     .website-mock .main-rec
     {
-        width: 96%;
+        width: 24rem;
+        height: 3.2rem;
         padding-top: 0;
     }
 
+    .website-mock .rec-1 {
+        top:2.75rem;
+    }
+
     .website-mock .rec-2 {
-        left: 25.16rem;
+        left: 23.56rem;
     }
 
     .website-mock .rec-3 {
-        left: 25.16rem;
-        top: 2.75rem;
+        left: 23.56rem;
+        top:2.75rem;
     }
     
     .latest-work-wrap.website-latest-works {
