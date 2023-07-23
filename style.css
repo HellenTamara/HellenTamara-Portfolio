@@ -668,7 +668,7 @@ input.main-rec {
 .works-header {
     position: relative;
     overflow: hidden;
-    height: 70vh;
+    height: 58vh;
     margin: 3rem 5.31rem 0 5.31rem;
     border-radius: 2.75rem;
     background-color: #F2F1ED;
@@ -678,7 +678,7 @@ input.main-rec {
 .works-title {
     font-family: "VT323";
     font-size: 7rem;
-    width: 50%;
+    width: 60%;
     margin: 2rem 0 0 5.31rem;
 }
 
@@ -747,39 +747,43 @@ input.main-rec {
     margin-bottom: 4rem;
 }
 
-.carousel-container {
+.carousel-container
+{
     display: flex;
+    margin: 0 5.31rem; 
 }
 
-.all-websites .latest-works-gallery,
 .all-websites .layer-gallery {
+    right: 0;
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 10.62rem);
+    margin: 0 5.31rem; 
+
+}
+
+.all-websites .arrow-wrapper,
+.all-websites .project-wrap
+{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.all-websites .latest-works-gallery {
     margin: 0;
 }
 
 .all-websites .project-background,
 .all-websites .arrow-wrap {
-    height: 21rem;
-}
-
-.all-websites .project-1,
-.all-websites .arrow-wrap-1 {
-    margin: 0 1rem 0 5.31rem;
-}
-
-.all-websites .project-2,
-.all-websites .arrow-wrap-2 {
-    margin: 0 1rem;
-}
-
-.all-websites .project-3,
-.all-websites .arrow-wrap-3 {
-    margin: 0 5.31rem 0 1rem;
+    height: 28vw;
+    width: 95%;
+    margin: 0;
 }
 
 .all-websites .button-style {
     margin: 6rem auto;
 }
-
 
 /* Responsive */
 
@@ -806,12 +810,9 @@ input.main-rec {
     }
 
     .latest-work-title,
-    .latest-work-text {
-        width: 1093px;
-        margin: 0 auto;
-    }
-
-    .latest-works-gallery {
+    .latest-work-text,
+    .latest-works-gallery
+    {
         width: 1093px;
         margin: 0 auto;
     }
@@ -843,10 +844,10 @@ input.main-rec {
         margin: 3rem auto 0 auto;
     }
 
-
-
     .all-websites .latest-works-gallery,
-    .all-websites .layer-gallery {
+    .all-websites .layer-gallery,
+    .carousel-container
+    {
         width: 1095px;
         margin: 0 auto;
     }
@@ -876,6 +877,10 @@ input.main-rec {
         width: 344px;
     }
 
+    .all-websites .arrow-wrap-1 {
+        left: -1.25rem;
+    }
+
     .all-websites .arrow-wrap-2 {
         position: absolute;
         left: 23.5rem;
@@ -890,6 +895,12 @@ input.main-rec {
         display: none;
     }
 
+}
+
+@media (max-width: 1176px) and (min-width: 809px) {
+    .works-header img {
+        width: 30rem;
+    }
 }
 
 @media (min-width: 1009px) {
@@ -909,6 +920,16 @@ input.main-rec {
         display: none;
     }
 
+}
+
+@media (max-width: 929px) and (min-width: 809px) {
+    .works-header img {
+        width: 25rem;
+    }
+
+    .works-title {
+        font-size: 5rem;
+    }
 }
 
 /* Tablet Size */
@@ -1211,6 +1232,43 @@ input.main-rec {
         display: none;
     }
 
+    /* Works Page */
+    .works-header {
+        margin: 3rem 3rem 0 3rem;
+        height: 50vh;;
+    }
+
+    .works-title {
+        font-size: 7rem;
+        width: 70%; 
+    }
+    
+    .works-img {
+        position: absolute;
+        bottom: 0;
+        right: -1rem;
+        width: 35rem;
+    }
+    
+    .lucky-btn {
+        margin: 4.5rem 0 0 5.31rem;
+        width: 20rem;
+        height: 3.62rem;
+    }
+    
+    .lucky-btn p {
+        width: 100%;
+        height: 80%;
+    }
+
+
+    .all-websites .project-title{
+        font-size: 150%;
+    }
+
+    .all-websites .project-technologies {
+        font-size: 100%;
+    }
 }
 
 @media (max-width: 808px) {
@@ -1226,8 +1284,33 @@ input.main-rec {
         margin: 0 1.3rem 0 3rem;
     }
 
+    .works-img {
+        width: 21rem;
+    }
+
 }
 
+@media (max-width: 1008px) and (min-width: 734px) {
+    .lucky-btn .rec-1 {
+        top: 3.15rem;
+    }
+
+    .lucky-btn .rec-2 {
+        top: -0.5rem;
+        left: 19.6rem;
+    }
+
+    .lucky-btn .rec-3 {
+        bottom: -0.5rem;
+        left: 19.6rem;
+    }
+
+    .lucky-btn .rec-4 {
+        bottom: 1.35rem;
+    }
+}
+
+/* Phone Size */
 @media (max-width: 733px) {
     .section-title {
         font-size: 4rem;
@@ -1453,10 +1536,6 @@ input.main-rec {
         margin: 1rem 0 0 2rem;
     }
 
-    .works-img {
-        width: 21rem;
-    }
-
     .lucky-btn {
         width: 15rem;
         height: 2.8rem;
@@ -1520,12 +1599,14 @@ input.main-rec {
 
     .carousel-container {
         margin: 0;
-        width: fit-content;
+        width: calc(100vw * 3);
         transition: all 0.5s ease;
     }
 
+
+
     .project-wrap {
-        width: 100vw;
+        width: 100%;
         display: flex;
         justify-content: center;
         margin: 0;
@@ -1543,8 +1624,8 @@ input.main-rec {
     }
 
     .all-websites .project-background {
-        width: 18rem;
-        height: 18rem;
+        width: 17rem;
+        height: 17rem;
     }
 
     .all-websites .project-technologies {
@@ -1555,7 +1636,7 @@ input.main-rec {
     .all-websites .project-2,
     .all-websites .project-3
     {
-        margin: 0 0 0 -1rem;
+        margin: 0 21vw 0 0;
     }
 
     .all-websites .button-style {
@@ -1573,4 +1654,6 @@ input.main-rec {
     .all-websites .rec-3{
         bottom: 0.34rem;
     }
+
+
 }
