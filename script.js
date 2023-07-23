@@ -70,19 +70,39 @@ $(document).ready(function () {
 
 // Language 
 $(document).ready(function () {
-    $(".language-block").click(function (e) {
-        e.stopPropagation();
-        const lang = $(".lang-pt").css("display");
-        if (lang == "none") {
-            $(".lang-pt").css("display", "block");
-            $(".lang-eng").css("display", "none");
-        } else {
-            $(".lang-pt").css("display", "none");
-            $(".lang-eng").css("display", "block");
-        }
+    // Check if the language parameter is present in the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const langParam = urlParams.get("lang");
+    
+    if (langParam === "pt") {
+      $(".lang-pt").css("display", "block");
+      $(".lang-eng").css("display", "none");
+    } else {
+      $(".lang-pt").css("display", "none");
+      $(".lang-eng").css("display", "block");
+    }
 
+    $(".language-block").click(function (e) {
+      e.stopPropagation();
+      let newLang = "eng"; // Default to English
+
+      // Toggle the language display and set the newLang variable
+      if ($(".lang-pt").css("display") === "none") {
+        $(".lang-pt").css("display", "block");
+        $(".lang-eng").css("display", "none");
+        newLang = "pt"; // Set to Portuguese if the display is none (hidden)
+      } else {
+        $(".lang-pt").css("display", "none");
+        $(".lang-eng").css("display", "block");
+      }
+
+      // Update the URL with the new language parameter
+      const urlParams = new URLSearchParams(window.location.search);
+      urlParams.set("lang", newLang);
+      const newURL = `${window.location.pathname}?${urlParams.toString()}${window.location.hash}`;
+      window.history.replaceState({}, '', newURL);
     });
-});
+  });
 
 // I'm feeling lucky button
 
