@@ -786,6 +786,11 @@ input.main-rec {
 }
 
 /* Project Page */
+
+.navbar.website-page {
+    margin-bottom: 3rem;
+}
+
 .website-top-part {
     margin: 3rem 5.31rem;
 }
@@ -810,7 +815,7 @@ input.main-rec {
 }
 
 .website-info {
-    margin: 3rem 0;
+    margin: 3rem 0 6rem 0;
     width: 28%;
     font-size: 1rem;
 }
@@ -821,7 +826,7 @@ input.main-rec {
 }
 
 .website-mock {
-    height: 80vh;
+    height: 65vh;
     background-color: #F3F1EE;
     width: 100%;
     display: flex;
