@@ -27,14 +27,6 @@ li {
     font-weight: 700;
 }
 
-.lang-eng {
-    display: block;
-}
-
-.lang-pt {
-    display: none;
-}
-
 /* Navbar */
 .navbar {
     height: 5.18rem;
