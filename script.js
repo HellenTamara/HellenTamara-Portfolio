@@ -29,7 +29,7 @@ $(document).ready(function () {
 
 // Contact window
 $(document).ready(function () {
-    $(".button-style").click(function (e) {
+    $(".button-style.to-form").click(function (e) {
         e.stopPropagation();
         $(".window-overlay").fadeIn();
         $(".window-wrapper").addClass("change");
@@ -58,12 +58,24 @@ $(document).ready(function () {
         const linkedURL = $('.arrow-wrap-1 a').attr('href');
         window.location.href = linkedURL;
     });
+    $('.arrow-wrap-1').on('click', function () {
+        const linkedURL = $('.arrow-wrap-1 a').attr('href');
+        window.location.href = linkedURL;
+    });
     $('.project-2').on('click', function () {
         const linkedURL = $('.arrow-wrap-2 a').attr('href');
         window.location.href = linkedURL;
     });
+    $('.arrow-wrap-2').on('click', function () {
+        const linkedURL = $('.arrow-wrap-1 a').attr('href');
+        window.location.href = linkedURL;
+    });
     $('.project-3').on('click', function () {
         const linkedURL = $('.arrow-wrap-3 a').attr('href');
+        window.location.href = linkedURL;
+    });
+    $('.arrow-wrap-3').on('click', function () {
+        const linkedURL = $('.arrow-wrap-1 a').attr('href');
         window.location.href = linkedURL;
     });
 });
@@ -98,7 +110,6 @@ $(document).ready(function () {
 });
 
 // Workshop Page Projects Controls
-
 $(document).ready(function () {
     const $leftControl = $('.projects-left-btn');
     const $rightControl = $('.projects-right-btn');
