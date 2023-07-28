@@ -46,6 +46,14 @@ $(document).ready(function () {
         e.stopPropagation();
     });
 
+    $(".ai-github-fill").on("click",function(){
+        window.open('https://github.com/HellenTamara','_blank');
+    });
+
+    $(".ai-linkedin-fill").on("click",function(){
+        window.open('https://www.linkedin.com/in/hellen-tamara-naito/','_blank');
+    });
+
     $(".form-close-btn").click(function () {
         $(".window-overlay").fadeOut();
         $(".window-wrapper").removeClass("change");

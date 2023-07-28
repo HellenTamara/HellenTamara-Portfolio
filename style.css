@@ -89,17 +89,18 @@ li {
 .language-block {
     display: none;
     position: absolute;
-    top: 1.5rem;
+    top: 1.2rem;
     width: 100%;
-    height: 40px;
+    height: 60px;
     padding-left: 0.5rem;
     align-items: center;
 }
 
+
 .bubble {
     height: 400px;
     position: absolute;
-    top: 1rem;
+    top: 1.5rem;
     right: 1rem;
     display: block;
     text-align: center;
@@ -269,66 +270,40 @@ li {
     font-size: 1.3rem;
     margin: 0;
     text-align: center;
-    padding-top: 6%;
+    padding-top: 1rem;
 }
 
-.rec-1 {
+.pix-left-bottom,
+.pix-right-top,
+.pix-right-bottom,
+.pix-left-top {
     box-sizing: border-box;
-
     position: absolute;
-    bottom: 0;
     width: 0.44rem;
     height: 0.44rem;
-
     background: var(--white-color);
+    border-style: solid;
+    border-color: #000000;
+}
+
+.pix-left-bottom {
+    bottom: 0;
     border-width: 2px 2px 0px 0px;
-    border-style: solid;
-    border-color: #000000;
 }
 
-
-.rec-2 {
-    box-sizing: border-box;
-
-    position: absolute;
+.pix-right-top {
     right: 0;
-    width: 0.44rem;
-    height: 0.44rem;
-
-    background: var(--white-color);
     border-width: 0px 0px 2px 2px;
-    border-style: solid;
-    border-color: #000000;
 }
 
-
-.rec-3 {
-    box-sizing: border-box;
-
-    position: absolute;
+.pix-right-bottom {
     bottom: 0;
     right: 0;
-    width: 0.44rem;
-    height: 0.44rem;
-
-    background: var(--white-color);
     border-width: 2px 0px 0px 2px;
-    border-style: solid;
-    border-color: #000000;
-
 }
 
-.rec-4 {
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 0.44rem;
-    height: 0.44rem;
-
-    background: var(--white-color);
+.pix-left-top {
     border-width: 0px 2px 2px 0px;
-    border-style: solid;
-    border-color: #000000;
 }
 
 /* Latest Work Section */
@@ -341,7 +316,10 @@ li {
     background-color: #F1EFEB;
 }
 
-.latest-work-title,
+.latest-work-title {
+    margin: 0 0 0 5.31rem;
+}
+
 .latest-work-text {
     margin: 0 0 0 5.31rem;
 }
@@ -497,7 +475,7 @@ li {
     width: 320px;
     height: 133px;
     left: 50px;
-    top: 0.5rem;
+    top: 2.3rem;
 
     font-family: "VT323";
     font-style: normal;
@@ -562,7 +540,7 @@ li {
     width: auto;
     height: 356px;
     right: 0px;
-    top: 5rem;
+    top: 6.5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -584,6 +562,8 @@ textarea {
     width: 374px;
     background-color: var(--white-color);
     border: none;
+    font-size: 1.4rem;
+    font-family: "Roboto", sans-serif;
     border-bottom: 2px solid var(--black-color);
     margin: 0 50px 0 50px;
     outline: none;
@@ -608,22 +588,22 @@ input.main-rec {
     cursor: pointer;
 }
 
-.form-btn .rec-1 {
+.form-btn .pix-left-bottom {
     top: 21.57rem;
     right: 13.14rem;
 }
 
-.form-btn .rec-2 {
+.form-btn .pix-right-top {
     top: 19rem;
     right: 3.11rem
 }
 
-.form-btn .rec-3 {
+.form-btn .pix-right-bottom {
     top: 21.57rem;
     right: 3.11rem;
 }
 
-.form-btn .rec-4 {
+.form-btn .pix-left-top {
     top: 19rem;
     right: 13.14rem;
 }
@@ -664,7 +644,7 @@ input.main-rec {
     margin: 3rem 5.31rem 0 5.31rem;
     border-radius: 2.75rem;
     background-color: #F2F1ED;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: 7px 7px 26px -1px rgba(149,157,165,0.3);
 }
 
 .works-title {
@@ -702,28 +682,28 @@ input.main-rec {
     cursor: pointer;
 }
 
-.lucky-btn .rec-1 {
+.lucky-btn .pix-left-bottom {
     background: #F2F1ED;
     position: relative;
     left: 0;
     top: 3.2rem;
 }
 
-.lucky-btn .rec-2 {
+.lucky-btn .pix-right-top {
     background: #F2F1ED;
     position: relative;
     left: 19.55rem;
     bottom: 0.43rem;
 }
 
-.lucky-btn .rec-3 {
+.lucky-btn .pix-right-bottom {
     background: #F2F1ED;
     position: relative;
     left: 19.55rem;
     top: 2.3rem;
 }
 
-.lucky-btn .rec-4 {
+.lucky-btn .pix-left-top {
     background: #F2F1ED;
     position: relative;
     left: 0;
@@ -789,6 +769,7 @@ input.main-rec {
 
 .website-title {
     text-decoration: none;
+    margin-left: -0.5rem;
     color: var(--black-color);
     font-family: "VT323";
     font-size: 7rem;
@@ -814,11 +795,11 @@ input.main-rec {
 
 .division {
     width: 100%;
-    border: var(--black-color) 2px solid; 
+    border: var(--black-color) 0.6px solid; 
 }
 
 .website-mock {
-    height: 65vh;
+    height: 68vh;
     background-color: #F3F1EE;
     width: 100%;
     display: flex;
@@ -837,6 +818,10 @@ input.main-rec {
 
 .contact-wrapper.website-latest-works {
     background-color: #F3F1EE;
+}
+
+.button-style {
+    margin-top: 1rem;
 }
 
 
@@ -1047,6 +1032,14 @@ input.main-rec {
         height: 50%;
     }
 
+    .ai-briefcase.menu-icon {
+        font-size: 1.8rem;
+    }
+
+    .ai-file.menu-icon {
+        font-size: 1.6rem;
+    }
+
     .divider {
         position: relative;
         top: 25rem;
@@ -1056,10 +1049,10 @@ input.main-rec {
     }
 
     .language {
-        margin-top: 1.5rem;
+        margin-top: 2.3rem;
     }
 
-    .language li a {
+    .language li a{
         height: 40px;
         margin-right: 1.5rem;
     }
@@ -1071,14 +1064,20 @@ input.main-rec {
 
     .ai-globe {
         font-size: 1.5rem;
-        padding-top: 1.3rem;
     }
 
     .ai-triangle-down-fill {
         position: absolute;
         margin-left: 7rem;
         font-size: 1.5rem;
-        padding-top: 1.3rem;
+    }
+
+    .language-title{
+        margin: -2.8rem 0 0 0.3rem;
+    }
+
+    .language-title a:first-of-type {
+        font-size: 1.7rem;
     }
 
     .vertical-menu .nav-item,
@@ -1212,22 +1211,22 @@ input.main-rec {
         top: 34rem;
     }
 
-    .form-btn .rec-1 {
+    .form-btn .pix-left-bottom {
         top: 37.52rem;
         left: 16.02rem;
     }
 
-    .form-btn .rec-2 {
+    .form-btn .pix-right-top {
         top: 35rem;
         left: 29.1rem;
     }
 
-    .form-btn .rec-3 {
+    .form-btn .pix-right-bottom {
         top: 37.52rem;
         left: 29.1rem;
     }
 
-    .form-btn .rec-4 {
+    .form-btn .pix-left-top {
         top: 35rem;
         left: 16.02rem;
     }
@@ -1350,14 +1349,14 @@ input.main-rec {
         padding-top: 0.3rem;
     }
 
-    .website-mock .rec-1 {
+    .website-mock .pix-left-bottom {
         bottom: 0.44rem;
     }
 
-    .website-mock .rec-2  {
+    .website-mock .pix-right-top  {
         left: 11.55rem;
     }
-    .website-mock .rec-3  {
+    .website-mock .pix-right-bottom  {
         left: 11.55rem;
         bottom: 0.44rem;
     }
@@ -1383,21 +1382,21 @@ input.main-rec {
 }
 
 @media (max-width: 1008px) and (min-width: 734px) {
-    .lucky-btn .rec-1 {
+    .lucky-btn .pix-left-bottom {
         top: 3.15rem;
     }
 
-    .lucky-btn .rec-2 {
+    .lucky-btn .pix-right-top {
         top: -0.5rem;
         left: 19.6rem;
     }
 
-    .lucky-btn .rec-3 {
+    .lucky-btn .pix-right-bottom {
         bottom: -0.5rem;
         left: 19.6rem;
     }
 
-    .lucky-btn .rec-4 {
+    .lucky-btn .pix-left-top {
         bottom: 1.35rem;
     }
 }
@@ -1487,21 +1486,21 @@ input.main-rec {
     .form-close-btn {
         position: absolute;
         right: 25px;
-        top: 0.5rem;
-        font-size: 1.5rem;
+        top: 1.8rem;
+        font-size: 1.9rem;
     }
 
     .window-heading {
         position: absolute;
         text-align: center;
         width: 80%;
-        margin-bottom: 1rem;
+        margin: 4rem 0 1rem 0;
         height: 120px;
         left: 50%;
         transform: translate(-50%, -50%);
-        top: 2.6rem;
-        font-size: 3.2rem;
-        letter-spacing: 5px;
+        top: 4.3rem;
+        font-size: 2.5rem;
+        letter-spacing: 3px;
         line-height: 40px;
     }
 
@@ -1514,7 +1513,7 @@ input.main-rec {
         width: 21rem;
         height: 300px;
         right: 1.5rem;
-        top: 11rem;
+        top: 11.5rem;
         gap: 18px;
     }
 
@@ -1539,22 +1538,22 @@ input.main-rec {
         color: #000;
     }
 
-    .form-btn .rec-1 {
+    .form-btn .pix-left-bottom {
         top: 23.58rem;
         left: 0rem;
     }
 
-    .form-btn .rec-2 {
+    .form-btn .pix-right-top {
         top: 21rem;
         left: 19.55rem;
     }
 
-    .form-btn .rec-3 {
+    .form-btn .pix-right-bottom {
         top: 23.58rem;
         left: 19.55rem;
     }
 
-    .form-btn .rec-4 {
+    .form-btn .pix-left-top {
         top: 21rem;
         left: 0rem;
     }
@@ -1574,7 +1573,7 @@ input.main-rec {
         width: 2rem;
         left: 13rem;
         top: 39rem;
-        font-size: 50px;
+        font-size: 40px;
         margin-bottom: 2rem;
 
     }
@@ -1583,15 +1582,15 @@ input.main-rec {
         top: 39.2rem;
         left: 8rem;
         margin: 12px 0;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
 
     }
 
     .window-left i:last-child {
-        left: 8.6rem;
-        top: 39.7rem;
-        font-size: 36px;
+        left: 8.4rem;
+        top: 39.6rem;
+        font-size: 30px;
         color: var(--white-color);
     }
 
@@ -1627,7 +1626,7 @@ input.main-rec {
 
     .works-title {
         font-size: 4rem;
-        font-weight: 700;
+        font-weight: 500;
         width: 90%;
         margin: 1rem 0 0 2rem;
     }
@@ -1640,8 +1639,9 @@ input.main-rec {
 
     .lucky-btn p {
         width: 100%;
-        height: 70%;
+        height: 80%;
         font-size: 1.3rem;
+        text-align: center;
     }
 
     .lucky-btn .main-rec {
@@ -1649,22 +1649,22 @@ input.main-rec {
         height: 2.8rem;
     }
 
-    .lucky-btn .rec-1 {
+    .lucky-btn .pix-left-bottom {
         top: 2.35rem;
         left: 0;
     }
 
-    .lucky-btn .rec-2 {
+    .lucky-btn .pix-right-top {
         top: -0.45rem;
         left: 14.55rem;
     }
 
-    .lucky-btn .rec-3 {
+    .lucky-btn .pix-right-bottom {
         top: 1.47rem;
         left: 14.55rem;
     }
 
-    .lucky-btn .rec-4 {
+    .lucky-btn .pix-left-top {
         bottom: 1.35rem;
         left: 0;
     }
@@ -1741,12 +1741,18 @@ input.main-rec {
         height: 3.3rem;
     }
 
-    .all-websites .rec-1{
-        bottom: 0.34rem;
+    .all-websites .main-rec p {
+        padding-top: 0.8rem;
+        font-size: 1.3rem;
     }
 
-    .all-websites .rec-3{
-        bottom: 0.34rem;
+
+    .all-websites .pix-left-bottom{
+        bottom: 0.27rem;
+    }
+
+    .all-websites .pix-right-bottom{
+        bottom: 0.27rem;
     }
 
     /* Website Page */
@@ -1794,15 +1800,15 @@ input.main-rec {
         padding-top: 0;
     }
 
-    .website-mock .rec-1 {
+    .website-mock .pix-left-bottom {
         top:2.75rem;
     }
 
-    .website-mock .rec-2 {
+    .website-mock .pix-right-top {
         left: 23.56rem;
     }
 
-    .website-mock .rec-3 {
+    .website-mock .pix-right-bottom {
         left: 23.56rem;
         top:2.75rem;
     }
