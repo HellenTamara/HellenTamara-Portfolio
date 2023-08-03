@@ -62,30 +62,30 @@ $(document).ready(function () {
 
 // Projects Redirecting Links
 $(document).ready(function () {
-    $('.project-1').on('click', function () {
-        const linkedURL = $('.arrow-wrap-1 a').attr('href');
-        window.location.href = linkedURL;
+    $('.project-1, .arrow-wrap-1').on('click', function () {
+        document.location = "project1page.html";
     });
-    $('.arrow-wrap-1').on('click', function () {
-        const linkedURL = $('.arrow-wrap-1 a').attr('href');
-        window.location.href = linkedURL;
+
+    $('.project-1.lang-pt, .arrow-wrap-1.lang-pt').on('click', function () {
+        document.location = "project1pt.html";
     });
-    $('.project-2').on('click', function () {
-        const linkedURL = $('.arrow-wrap-2 a').attr('href');
-        window.location.href = linkedURL;
+
+    $('.project-2, .arrow-wrap-2').on('click', function () {
+        document.location = "project1page.html";
     });
-    $('.arrow-wrap-2').on('click', function () {
-        const linkedURL = $('.arrow-wrap-1 a').attr('href');
-        window.location.href = linkedURL;
+
+    $('.project-2.lang-pt, .arrow-wrap-2.lang-pt').on('click', function () {
+        document.location = "project1pt.html";
     });
-    $('.project-3').on('click', function () {
-        const linkedURL = $('.arrow-wrap-3 a').attr('href');
-        window.location.href = linkedURL;
+
+    $('.project-3, .arrow-wrap-3').on('click', function () {
+        document.location = "project1page.html";
     });
-    $('.arrow-wrap-3').on('click', function () {
-        const linkedURL = $('.arrow-wrap-1 a').attr('href');
-        window.location.href = linkedURL;
+
+    $('.project-3.lang-pt, .arrow-wrap-3.lang-pt').on('click', function () {
+        document.location = "project1pt.html";
     });
+
 });
 
 // I'm feeling lucky button
