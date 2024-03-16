@@ -71,19 +71,19 @@ $(document).ready(function () {
     });
 
     $('.project-2, .arrow-wrap-2').on('click', function () {
-        document.location = "project1page.html";
+        document.location = "project2page.html";
     });
 
     $('.project-2.lang-pt, .arrow-wrap-2.lang-pt').on('click', function () {
-        document.location = "project1pt.html";
+        document.location = "project2pt.html";
     });
 
     $('.project-3, .arrow-wrap-3').on('click', function () {
-        document.location = "project1page.html";
+        document.location = "project3page.html";
     });
 
     $('.project-3.lang-pt, .arrow-wrap-3.lang-pt').on('click', function () {
-        document.location = "project1pt.html";
+        document.location = "project3pt.html";
     });
 
 });
