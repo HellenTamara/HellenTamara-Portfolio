@@ -996,6 +996,12 @@ input.main-rec {
     }
 }
 
+@media (min-width: 1009px) and (max-width: 1278px) {
+  .project-background-img.workpage {
+    height: 60%;
+  }
+}
+
 @media (min-width: 1009px) {
     .menu-icon {
         visibility: hidden;
@@ -1012,11 +1018,6 @@ input.main-rec {
     .controls img {
         display: none;
     }
-
-    .project-background-img.workpage {
-      height: 60%;
-    }
-
 }
 
 @media (max-width: 929px) and (min-width: 809px) {
@@ -1386,7 +1387,7 @@ input.main-rec {
     }
 
     .project-background-img.workpage {
-      height: 60%;
+      height: 75%;
     }
 
     /* Website Page */
