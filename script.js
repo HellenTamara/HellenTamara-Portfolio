@@ -62,27 +62,27 @@ $(document).ready(function () {
 
 // Projects Redirecting Links
 $(document).ready(function () {
-    $('.project-1, .arrow-wrap-1').on('click', function () {
+    $('.project1, .arrow-wrap-1').on('click', function () {
         document.location = "project1page.html";
     });
 
-    $('.project-1.lang-pt, .arrow-wrap-1.lang-pt').on('click', function () {
+    $('.project1.lang-pt, .arrow-wrap-1.lang-pt').on('click', function () {
         document.location = "project1pt.html";
     });
 
-    $('.project-2, .arrow-wrap-2').on('click', function () {
+    $('.project2, .arrow-wrap-2').on('click', function () {
         document.location = "project2page.html";
     });
 
-    $('.project-2.lang-pt, .arrow-wrap-2.lang-pt').on('click', function () {
+    $('.project2.lang-pt, .arrow-wrap-2.lang-pt').on('click', function () {
         document.location = "project2pt.html";
     });
 
-    $('.project-3, .arrow-wrap-3').on('click', function () {
+    $('.project3, .arrow-wrap-3').on('click', function () {
         document.location = "project3page.html";
     });
 
-    $('.project-3.lang-pt, .arrow-wrap-3.lang-pt').on('click', function () {
+    $('.project3.lang-pt, .arrow-wrap-3.lang-pt').on('click', function () {
         document.location = "project3pt.html";
     });
 
