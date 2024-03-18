@@ -998,10 +998,6 @@ input.main-rec {
     width: 30rem;
   }
 
-  .website-mock.project2 img {
-    width: 60rem;
-  }
-
 }
 
 @media (max-width: 1176px) and (min-width: 809px) {
@@ -1035,6 +1031,10 @@ input.main-rec {
 
   .controls img {
     display: none;
+  }
+
+  .website-mock {
+    height: 76vh;
   }
 }
 
@@ -1503,10 +1503,8 @@ input.main-rec {
     bottom: 1.35rem;
   }
 
-
-
   .website-mock {
-    height: 39vh;
+    height: 61vh;
   }
 
   .website-mock.project-1 img,
@@ -1910,7 +1908,7 @@ input.main-rec {
   }
 
   .website-mock {
-    height: 50vh;
+    height: 61vh;
     background-color: var(--white-color);
   }
 
