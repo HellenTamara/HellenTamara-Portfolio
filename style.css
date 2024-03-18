@@ -1425,6 +1425,7 @@ input.main-rec {
   /* Website Page */
   .website-mock {
     height: 55vh;
+
   }
 
   .website-mock img {
@@ -1589,10 +1590,6 @@ input.main-rec {
   .project-background {
     height: 24rem;
     width: 95%;
-  }
-
-  .project-2 {
-    margin-top: 1rem;
   }
 
   .window-wrapper {
@@ -1893,6 +1890,11 @@ input.main-rec {
   .website-info-wrapper {
     display: flex;
     flex-direction: column;
+  }
+
+  .website-info-wrapper.project-2,
+  .website-info-wrapper.project-3 {
+    margin-bottom: -3.5rem;
   }
 
   .website-info {
