@@ -1,0 +1,172 @@
+
+/* Pc Screen Sizes */
+@media (min-width: 1279px) {
+  .navbar {
+    width: 1093px;
+    margin: 0 auto;
+  }
+
+  .heading-wrapper {
+    width: 1263px;
+    margin: 0 auto;
+  }
+
+  .project-background {
+    width: 31.31rem;
+    height: 27.94rem;
+  }
+
+  .arrow-wrap {
+    width: 31.31rem;
+    height: 27.94rem;
+  }
+
+  .latest-work-title,
+  .latest-work-text,
+  .latest-works-gallery {
+    width: 1093px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .arrow-wrap-2 {
+    position: absolute;
+    right: -9.2%;
+    z-index: 2;
+  }
+
+  .project-background.project-1 {
+    margin: 3rem 0 2rem 0;
+  }
+
+  .project-background.project-2 {
+    margin: 3rem 0 2rem 5rem;
+  }
+
+  .footer {
+    width: 1093px;
+    margin: 0 auto;
+  }
+
+  /* Works Page */
+
+  .works-header {
+    height: 630px;
+    width: 1093px;
+    margin: 3rem auto 0 auto;
+  }
+
+  .all-websites .latest-works-gallery,
+  .all-websites .layer-gallery,
+  .carousel-container {
+    width: 1095px;
+    margin: 0 auto;
+  }
+
+  .all-websites .arrow-wrap {
+    margin: 0;
+    width: 344px;
+  }
+
+  .all-websites .project-background,
+  .all-websites .arrow-wrap {
+    height: 21rem;
+  }
+
+  .all-websites .project-1 {
+    margin: 0 1rem 0 0;
+    width: 344px;
+  }
+
+  .all-websites .project-2 {
+    margin: 0 1rem;
+    width: 344px;
+  }
+
+  .all-websites .project-3 {
+    margin: 0 0 0 1rem;
+    width: 344px;
+  }
+
+  .all-websites .arrow-wrap-1 {
+    left: -1.25rem;
+  }
+
+  .all-websites .arrow-wrap-2 {
+    position: absolute;
+    left: 23.5rem;
+  }
+
+  .all-websites .arrow-wrap-3 {
+    position: absolute;
+    right: 0;
+  }
+
+  .controls img {
+    display: none;
+  }
+
+  /* Website Page */
+  .website-top-part {
+    width: 1093px;
+    margin: 0 auto;
+  }
+
+  .website-mock.project-1 img {
+    width: 531px;
+  }
+
+  .website-mock.project-2 img,
+  .website-mock.project-3 img {
+    width: 878px;
+  }
+
+}
+
+@media (max-width: 1176px) and (min-width: 809px) {
+  .works-header img {
+    width: 30rem;
+  }
+
+  .project-background-img.workpage {
+    height: 60%;
+  }
+}
+
+@media (min-width: 1009px) and (max-width: 1278px) {
+  .project-background-img.workpage {
+    height: 60%;
+  }
+}
+
+@media (min-width: 1009px) {
+  .menu-icon {
+    visibility: hidden;
+  }
+
+  .form-close-btn {
+    position: absolute;
+    right: 3rem;
+    top: 1.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .controls img {
+    display: none;
+  }
+}
+
+@media (max-width: 929px) and (min-width: 809px) {
+  .works-header img {
+    width: 25rem;
+  }
+
+  .works-title {
+    font-size: 5rem;
+  }
+
+  .project-background-img.workpage {
+    height: 60%;
+  }
+}

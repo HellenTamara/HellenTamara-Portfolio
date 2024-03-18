@@ -1,0 +1,25 @@
+/* Footer */
+.footer {
+  height: 4rem;
+  margin: 0 5.31rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #DEE2E6;
+
+}
+
+.footer ul {
+  position: absolute;
+  margin: 0 auto;
+  visibility: visible;
+
+}
+
+.email {
+  text-decoration: none;
+  color: var(--black-color);
+  font-size: 16px;
+  width: 0 auto;
+  visibility: hidden;
+}

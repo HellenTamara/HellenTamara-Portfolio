@@ -1,0 +1,163 @@
+/* Navbar */
+.navbar {
+  height: 5.18rem;
+  margin: 0 5.31rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-bottom: 1px solid #DEE2E6;
+}
+
+.menu-wrapper {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 4%;
+  visibility: hidden;
+}
+
+.line-menu {
+  width: 19px;
+  height: 2.5px;
+  margin-bottom: 5px;
+  background-color: #000;
+}
+
+.navbar:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.language {
+  display: flex;
+  margin-left: 3.53rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.language .nav-item {
+  margin: 0 7px;
+}
+
+.navbar:last-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item.lang {
+  margin: 2px;
+}
+
+.language-block {
+  display: none;
+  position: absolute;
+  top: 1.2rem;
+  width: 100%;
+  height: 60px;
+  padding-left: 0.5rem;
+  align-items: center;
+}
+
+
+.bubble {
+  height: 400px;
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  display: block;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+  line-height: 1.3em;
+  background-color: #fff;
+  color: #000;
+
+  box-shadow: 0 -4px #fff,
+    0 -7px #000,
+    4px 0 #fff,
+    4px -3px #000,
+    7px 0 #000,
+    0 4px #fff,
+    0 7px #000,
+    -4px 0 #fff,
+    -4px 4px #000,
+    -7px 0 #000,
+    -4px -4px #000,
+    4px 4px #000;
+  box-sizing: border-box;
+  width: 400px;
+}
+
+.bubble::after {
+  content: '';
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+
+.bubble.mini {
+  width: 115px;
+  height: 25px;
+  font-size: 16px;
+  text-align: center;
+  font-family: monospace;
+}
+
+.bubble.top::after {
+  height: 3px;
+  width: 3px;
+  top: -7px;
+  right: 20px;
+  box-shadow: 0 -3px #000,
+    0 -6px #000,
+    0 -9px #000,
+    0 -12px #000,
+    -3px -9px #000,
+    -6px -6px #000,
+    -9px -3px #000,
+    -4px -4px #fff,
+    -8px -4px #fff,
+    -4px -8px #fff,
+    -3px 0 #fff,
+    -6px 0 #fff,
+    -9px 0 #fff;
+}
+
+.bubble ul {
+  padding: 0;
+  margin: 0;
+}
+
+
+.dropdown:hover .language-block {
+  display: block;
+}
+
+.navbar-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 1rem;
+  text-decoration: none;
+  color: var(--black-color);
+  font-size: 1rem;
+}
+
+.logo {
+  text-decoration: none;
+  color: #000;
+  font-family: "VT323";
+  font-size: 2.5rem;
+}

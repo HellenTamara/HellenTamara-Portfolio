@@ -1,0 +1,28 @@
+/* Common Styles */
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+.section-title {
+  font-family: "VT323";
+  font-size: 4.57rem;
+}
+
+:root {
+  --white-color: #f6f6f6;
+  --black-color: #000;
+  --accent-color: #F4CD4B;
+}
+
+.heading-1 {
+  font-size: 3.75rem;
+  font-weight: 700;
+}

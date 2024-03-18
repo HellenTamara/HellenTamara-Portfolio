@@ -1,0 +1,136 @@
+/* Latest Work Section */
+
+.latest-work-wrap {
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 3.96rem 0 3.96rem 0;
+  background-color: #F1EFEB;
+}
+
+.latest-work-title {
+  margin: 0;
+  text-align: center;
+}
+
+.latest-work-text {
+  margin: 0;
+  text-align: center;
+}
+
+.latest-works-gallery {
+  position: relative;
+  margin: 0 0 0 5.31rem;
+  display: flex;
+  overflow: hidden;
+}
+
+.latest-works-gallery a {
+  text-decoration: none;
+}
+
+.project-background {
+  position: relative;
+  width: 51%;
+  height: 34.78vw;
+  margin: 3rem 7rem 3rem 0;
+  background: var(--white-color);
+  border-radius: 4px 33px 37px;
+  overflow: hidden;
+}
+
+.project-title {
+  font-size: 29.4px;
+  font-weight: bold;
+  margin: 1.5rem 0 0 2.5rem;
+  color: var(--black-color);
+}
+
+.project-technologies {
+  font-size: 17.5px;
+  margin: 3px 0 0 2.5rem;
+  color: var(--black-color);
+}
+
+.project-background-img.project1 {
+  width: 100%;
+  height: 75%;
+  background-image: url(../Assets/care-key-mock.png);
+  background-size: cover;
+}
+
+.project-background-img.project2 {
+  width: 100%;
+  height: 75%;
+  background-image: url(../Assets/paw-time-mock.png);
+  background-size: 98%;
+  background-repeat: no-repeat;
+  background-position: right 55% bottom 30%;
+}
+
+.project-background-img.project3 {
+  width: 100%;
+  height: 75%;
+  background-image: url(../Assets/movie-mix-mock-responsive.png);
+  background-size: 98%;
+  background-repeat: no-repeat;
+  background-position: right 55% bottom 30%;
+}
+
+.layer-gallery {
+  position: absolute;
+  display: flex;
+  width: 100%;
+}
+
+.arrow-wrap {
+  position: relative;
+  width: 51%;
+  height: 34.78vw;
+  margin: 3rem 7rem 3rem 0;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 4px 33px 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.arrow-wrap:hover {
+  opacity: 1;
+}
+
+.arrow-wrap-1,
+.arrow-wrap-2,
+.arrow-wrap-3 {
+  z-index: 2;
+}
+
+.arrow {
+  width: 5rem;
+  background-color: var(--white-color);
+  font-size: 4rem;
+  border-radius: 10%;
+  text-align: center;
+}
+
+
+.line {
+  border-left: 2px solid #DEDDDA;
+  height: 18.5px;
+  position: absolute;
+  left: 50%;
+  margin: -3px;
+}
+
+.show-more {
+  text-align: center;
+  margin: 2rem 0 0 0;
+}
+
+.show-more a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--black-color);
+}

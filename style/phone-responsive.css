@@ -1,0 +1,494 @@
+/* Phone Size */
+@media (max-width: 733px) {
+  .section-title {
+    font-size: 4rem;
+  }
+
+  .vertical-menu {
+    width: 75%;
+    height: 100%;
+  }
+
+  .navbar-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .layer-gallery {
+    display: none;
+  }
+
+  .logo {
+    margin: 0 1.5rem;
+  }
+
+  .heading-wrapper {
+    flex-direction: column;
+    height: auto;
+    margin: 3rem 0;
+  }
+
+  .heading-left {
+    margin: 0;
+    width: 100%;
+  }
+
+  .image-wrapper img {
+    margin: 1rem auto;
+  }
+
+  .heading-right {
+    margin: 2rem 3rem 0 3rem;
+    width: 90%;
+  }
+
+  .latest-work-wrap {
+    height: auto;
+  }
+
+  .latest-work-title {
+    width: auto;
+    text-align: center;
+  }
+
+  .latest-work-text {
+    display: none;
+  }
+
+  .latest-works-gallery {
+    width: 92%;
+    flex-direction: column;
+    margin: 0 0 0 1.5rem;
+  }
+
+  .project-background {
+    height: 24rem;
+    width: 95%;
+  }
+
+  .window-wrapper {
+    width: 25rem;
+    height: 45rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .form-close-btn {
+    position: absolute;
+    right: 25px;
+    top: 1.8rem;
+    font-size: 1.9rem;
+  }
+
+  .window-heading {
+    position: absolute;
+    text-align: center;
+    width: 80%;
+    margin: 4rem 0 1rem 0;
+    height: 120px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 4.3rem;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    line-height: 40px;
+  }
+
+  label {
+    font-size: 17px;
+    margin: 0;
+  }
+
+  #contact-form {
+    width: 21rem;
+    height: 300px;
+    right: 1.5rem;
+    top: 11.5rem;
+    gap: 18px;
+  }
+
+  input,
+  textarea {
+    width: 20rem;
+    margin: 0;
+  }
+
+  #contact-form textarea {
+    min-height: 5rem;
+    max-height: 5rem;
+    min-width: 20rem;
+    max-width: 20rem;
+  }
+
+  input.main-rec {
+    position: absolute;
+    width: 20rem;
+    right: 1rem;
+    top: 20rem;
+    color: #000;
+  }
+
+  .form-btn .pix-left-bottom {
+    top: 23.58rem;
+    left: 0rem;
+  }
+
+  .form-btn .pix-right-top {
+    top: 21rem;
+    left: 19.55rem;
+  }
+
+  .form-btn .pix-right-bottom {
+    top: 23.58rem;
+    left: 19.55rem;
+  }
+
+  .form-btn .pix-left-top {
+    top: 21rem;
+    left: 0rem;
+  }
+
+  .window-text {
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    width: 13rem;
+    left: 6rem;
+    letter-spacing: 1.3px;
+    line-height: 20px;
+    top: 35rem;
+  }
+
+  .window-left i:first-of-type {
+    width: 2rem;
+    left: 13rem;
+    top: 39rem;
+    font-size: 40px;
+    margin-bottom: 2rem;
+
+  }
+
+  .icon-wrap {
+    top: 39.2rem;
+    left: 8rem;
+    margin: 12px 0;
+    width: 40px;
+    height: 40px;
+
+  }
+
+  .window-left i:last-child {
+    left: 8.4rem;
+    top: 39.6rem;
+    font-size: 30px;
+    color: var(--white-color);
+  }
+
+  .contact-title {
+    padding: 0 3rem;
+    text-align: center;
+  }
+
+  .footer {
+    margin: 0;
+  }
+
+  .footer .navbar-list {
+    padding: 0;
+    flex-direction: row;
+  }
+
+  .footer .nav-item {
+    margin: 0 1rem;
+    font-size: 1rem;
+  }
+
+  /* Work Page */
+
+  .works-header {
+    height: 450px;
+    margin: 2rem 1rem 0 1rem;
+  }
+
+  .lang-pt.works-title {
+    font-size: 3.2rem;
+  }
+
+  .works-title {
+    font-size: 4rem;
+    font-weight: 500;
+    width: 90%;
+    margin: 1rem 0 0 2rem;
+  }
+
+  .lucky-btn {
+    width: 15rem;
+    height: 2.8rem;
+    margin: 1rem 0 0 2rem;
+  }
+
+  .lucky-btn p {
+    width: 100%;
+    height: 80%;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .lucky-btn .main-rec {
+    width: 15rem;
+    height: 2.8rem;
+  }
+
+  .lucky-btn .pix-left-bottom {
+    top: 2.35rem;
+    left: 0;
+  }
+
+  .lucky-btn .pix-right-top {
+    top: -0.45rem;
+    left: 14.55rem;
+  }
+
+  .lucky-btn .pix-right-bottom {
+    top: 1.47rem;
+    left: 14.55rem;
+  }
+
+  .lucky-btn .pix-left-top {
+    bottom: 1.35rem;
+    left: 0;
+  }
+
+  /* Work Page All Websites */
+  .all-websites-title {
+    font-size: 4rem;
+    margin: 7rem auto 4rem auto;
+  }
+
+  .all-websites .latest-works-gallery {
+    margin: 0;
+    width: 96vw;
+  }
+
+  .controls img {
+    position: absolute;
+    display: block;
+    width: 2rem;
+    margin: 6rem 1% 0 1%;
+    transition: transform 0.2s;
+    z-index: 2;
+  }
+
+  .controls img:first-of-type {
+    right: 0;
+  }
+
+  .carousel-container {
+    margin: 0;
+    width: calc(100vw * 3);
+    transition: all 0.5s ease;
+  }
+
+  .project-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .all-websites .project-title {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .all-websites .project-background img {
+    position: relative;
+    left: 0;
+    margin-top: 0.9rem;
+  }
+
+  .all-websites .project-background {
+    width: 17rem;
+    height: 17rem;
+  }
+
+  .all-websites .project-technologies {
+    font-size: 1rem;
+  }
+
+  .all-websites .project-1,
+  .all-websites .project-2,
+  .all-websites .project-3 {
+    margin: 0 21vw 0 0;
+  }
+
+  .all-websites .button-style {
+    margin: 4rem auto;
+  }
+
+  .all-websites .main-rec {
+    height: 3.3rem;
+  }
+
+  .all-websites .main-rec p {
+    padding-top: 0.8rem;
+    font-size: 1.3rem;
+  }
+
+
+  .all-websites .pix-left-bottom {
+    bottom: 0.27rem;
+  }
+
+  .all-websites .pix-right-bottom {
+    bottom: 0.27rem;
+  }
+
+  /* Website Page */
+  .website-top-part {
+    margin: 3rem 1rem 0 1rem;
+    width: 96%;
+  }
+
+  .website-title {
+    font-size: 4rem;
+  }
+
+  .website-description {
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+  }
+
+  .website-info-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .website-info-wrapper.project-2,
+  .website-info-wrapper.project-3 {
+    margin-bottom: -3.5rem;
+  }
+
+  .website-info {
+    margin: 0.8rem 0;
+    width: 96%;
+    line-height: 0.8rem;
+    font-size: 1.2rem;
+  }
+
+  .website-info p {
+    margin: 0.8rem 0;
+    width: 96%;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .website-mock {
+    height: 61vh;
+    background-color: var(--white-color);
+  }
+
+  .website-mock.project-1 img {
+    width: 75%;
+  }
+
+
+  .website-mock.project-2 img,
+  .website-mock.project-3 img  {
+    width: 100%;
+  }
+
+  .website-mock .button-style,
+  .website-mock .main-rec {
+    width: 24rem;
+    height: 3.2rem;
+    padding-top: 0;
+  }
+
+  .website-mock .pix-left-bottom {
+    top: 2.75rem;
+  }
+
+  .website-mock .pix-right-top {
+    left: 23.56rem;
+  }
+
+  .website-mock .pix-right-bottom {
+    left: 23.56rem;
+    top: 2.75rem;
+  }
+
+  .latest-work-wrap.website-latest-works {
+    background-color: #F3F1EE;
+  }
+
+  .contact-wrapper.website-latest-works {
+    background-color: var(--white-color);
+  }
+
+  .project-background.project-page {
+    background-color: var(--white-color);
+  }
+}
+
+@media (max-width: 344px) {
+
+  /* Project Page */
+  .project-background {
+    height: 20rem;
+  }
+
+  .project-background-img.project1,
+  .project-background-img.project2,
+  .project-background-img.project3 {
+    height: 68%;
+  }
+
+  .project-title {
+    font-size: 23px;
+    margin: 0.5rem 0 0 1rem;
+  }
+
+  .project-technologies {
+    font-size: 16px;
+    margin: 0 0 0 1rem;
+  }
+
+  .website-mock {
+    height: 39vh;
+  }
+
+  .website-mock.project-1 img,
+  .website-mock.project-2 img,
+  .website-mock.project-3 img {
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+
+  .website-title {
+    font-size: 3.5rem;
+  }
+
+  .website-mock .button-style,
+  .website-mock .main-rec {
+    width: 17rem;
+    height: 3.2rem;
+    padding-top: 0;
+  }
+
+  .website-mock .pix-left-bottom {
+    top: 2.75rem;
+  }
+
+  .website-mock .pix-right-top {
+    left: 16.56rem;
+  }
+
+  .website-mock .pix-right-bottom {
+    left: 16.56rem;
+    top: 2.75rem;
+  }
+}

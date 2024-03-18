@@ -1,0 +1,76 @@
+/* Project Page */
+.navbar.website-page {
+  margin-bottom: 3rem;
+}
+
+.website-top-part {
+  margin: 3rem 5.31rem;
+}
+
+.website-title {
+  text-decoration: none;
+  color: var(--black-color);
+  font-family: "VT323";
+  font-size: 7rem;
+  cursor: pointer;
+}
+
+.website-description {
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.website-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.website-info {
+  margin: 3rem 0 2rem 0;
+  width: 28%;
+  font-size: 1rem;
+}
+
+.division {
+  width: 100%;
+  border: var(--black-color) 0.6px solid;
+}
+
+.website-mock {
+  height: 68vh;
+  background-color: #F3F1EE;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.website-mock img {
+  width: 50%;
+}
+
+.website-mock.project-2 img {
+  width: 70%;
+}
+
+.website-mock.project-3 img {
+  width: 70%;
+}
+
+.latest-work-wrap.website-latest-works {
+  background-color: var(--white-color);
+}
+
+.contact-wrapper.website-latest-works {
+  background-color: #F3F1EE;
+}
+
+.button-style {
+  margin-top: 1rem;
+}
+
+.project-background.project-page {
+  background-color: #F1EFEA;
+}

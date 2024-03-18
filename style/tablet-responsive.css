@@ -1,0 +1,464 @@
+/* Tablet Size */
+@media (max-width: 1008px) {
+  html {
+    font-size: 90%;
+  }
+
+  .navbar {
+    margin: 0;
+  }
+
+  .logo {
+    margin: 0 0 0 3rem;
+  }
+
+  .project-background {
+    height: 24rem;
+  }
+
+  .project-title {
+    font-size: 23px;
+    margin: 1.5rem 0 0 1rem;
+  }
+
+  .project-technologies {
+    font-size: 16px;
+    margin: 0 0 0 1rem;
+  }
+
+  /* Mobile Menu */
+
+  .show {
+    transform: translateX(0);
+  }
+
+  .hide {
+    transform: translateX(100%);
+  }
+
+  .vertical-menu {
+    display: block;
+    transition: transform 0.2s;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 50%;
+    background-color: var(--white-color);
+    z-index: 11;
+  }
+
+  .navbar-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin: 4.6rem 3rem 0 2rem;
+  }
+
+  .menu-icon {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    height: 50%;
+  }
+
+  .ai-briefcase.menu-icon {
+    font-size: 1.8rem;
+  }
+
+  .ai-file.menu-icon {
+    font-size: 1.6rem;
+  }
+
+  .divider {
+    position: relative;
+    top: 25rem;
+    width: 100%;
+    border-bottom: 1px solid #DEE2E6;
+    margin-top: 2rem;
+  }
+
+  .language {
+    margin-top: 2.3rem;
+  }
+
+  .language li a {
+    height: 40px;
+    margin-right: 1.5rem;
+  }
+
+  .dropdown {
+    height: auto;
+    margin: 0;
+  }
+
+  .ai-globe {
+    font-size: 1.5rem;
+  }
+
+  .ai-triangle-down-fill {
+    position: absolute;
+    margin-left: 7rem;
+    font-size: 1.5rem;
+  }
+
+  .language-title {
+    margin: -2.8rem 0 0 0.3rem;
+  }
+
+  .language-title a:first-of-type {
+    font-size: 1.7rem;
+  }
+
+  .vertical-menu .nav-item,
+  .vertical-menu .language {
+    font-size: 2rem;
+    color: var(--black-color);
+    z-index: 3;
+    margin-left: 1.5rem;
+  }
+
+  .language-block {
+    display: block;
+    position: relative;
+    height: auto;
+    top: 0;
+    left: 4rem;
+
+  }
+
+  .bubble {
+    visibility: hidden;
+  }
+
+  .bubble ul {
+    visibility: visible;
+  }
+
+  .vertical-menu li {
+    line-height: 4.5rem;
+  }
+
+  .menu-wrapper {
+    visibility: visible;
+    z-index: 13;
+  }
+
+  /* End of Mobile Menu */
+
+  .heading-wrapper {
+    height: 65vh;
+  }
+
+  .heading-left {
+    margin-left: -3rem;
+  }
+
+  .heading-right {
+    margin: 0 3rem 0 4rem;
+  }
+
+  .heading-right .button-style,
+  .main-rec {
+    width: 100%;
+  }
+
+  .main-rec p {
+    padding-top: 3%;
+  }
+
+  .latest-works-gallery {
+    margin: 0 0 0 3rem;
+  }
+
+  .project-background {
+    margin: 3rem 3rem 3rem 0;
+  }
+
+  .arrow-wrap {
+    z-index: -10;
+  }
+
+  /* Contact Window */
+
+  .window-wrapper {
+    width: 49rem;
+    height: 70rem;
+  }
+
+  .form-close-btn {
+    position: absolute;
+    right: 5rem;
+    top: 2rem;
+    font-size: 2rem;
+  }
+
+  .window-heading {
+    position: absolute;
+    text-align: center;
+    width: 60%;
+    height: 133px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 5rem;
+  }
+
+  label {
+    font-size: 30px;
+    margin: 0 50px;
+  }
+
+  #contact-form {
+    width: 45rem;
+    height: 38rem;
+    right: 2rem;
+    top: 17rem;
+    gap: 3rem;
+  }
+
+  input,
+  textarea {
+    width: 38rem;
+  }
+
+  #contact-form textarea {
+    min-height: 6rem;
+    max-height: 6rem;
+    min-width: 38rem;
+    max-width: 38rem;
+    font-size: 1.3rem;
+  }
+
+  input.main-rec {
+    position: absolute;
+    width: 30%;
+    right: 12rem;
+    top: 34rem;
+  }
+
+  .form-btn .pix-left-bottom {
+    top: 37.52rem;
+    left: 16.02rem;
+  }
+
+  .form-btn .pix-right-top {
+    top: 35rem;
+    left: 29.1rem;
+  }
+
+  .form-btn .pix-right-bottom {
+    top: 37.52rem;
+    left: 29.1rem;
+  }
+
+  .form-btn .pix-left-top {
+    top: 35rem;
+    left: 16.02rem;
+  }
+
+  .window-text {
+    font-size: 1.7rem;
+    width: 15rem;
+    left: 50px;
+    top: 58rem;
+  }
+
+  .window-left i:first-of-type {
+    width: 2rem;
+    left: 34rem;
+    top: 58rem;
+    font-size: 65px;
+  }
+
+  .icon-wrap {
+    width: 65px;
+    height: 65px;
+    top: 58rem;
+    left: 40rem;
+    margin: 12px 0;
+  }
+
+  .window-left i:last-child {
+    left: 40.9rem;
+    top: 58.5rem;
+    font-size: 43px;
+    color: var(--white-color);
+  }
+
+  .contact-wrapper .button-style {
+    width: 280px;
+  }
+
+  .contact-wrapper .main-rec p {
+    position: relative;
+    padding-top: 13px;
+  }
+
+  .footer {
+    margin: 0;
+  }
+
+  .footer .navbar-list {
+    visibility: visible;
+    padding: 0;
+    flex-direction: row;
+  }
+
+
+  .nav-item {
+    margin: 0 2.5rem;
+    color: #9e9e9e;
+    font-size: 1rem;
+  }
+
+  .email {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .controls img {
+    display: none;
+  }
+
+  /* Works Page */
+  .works-header {
+    margin: 3rem 3rem 0 3rem;
+    height: 50vh;
+    ;
+  }
+
+  .works-title {
+    font-size: 7rem;
+    width: 70%;
+  }
+
+  .works-img {
+    position: absolute;
+    bottom: 0;
+    right: -1rem;
+    width: 35rem;
+  }
+
+  .lucky-btn {
+    margin: 4.5rem 0 0 5.31rem;
+    width: 20rem;
+    height: 3.62rem;
+  }
+
+  .lucky-btn p {
+    width: 100%;
+    height: 80%;
+  }
+
+
+  .all-websites .project-title {
+    font-size: 150%;
+  }
+
+  .all-websites .project-technologies {
+    font-size: 100%;
+  }
+
+  .project-background-img.workpage {
+    height: 75%;
+  }
+
+  /* Website Page */
+  .website-mock {
+    height: 55vh;
+
+  }
+
+  .website-mock img {
+    width: 50%;
+  }
+
+  .website-mock .main-rec {
+    width: 12rem;
+    height: 3.2rem;
+    padding-top: 0.3rem;
+  }
+
+  .website-mock .pix-left-bottom {
+    bottom: 0.44rem;
+  }
+
+  .website-mock .pix-right-top {
+    left: 11.55rem;
+  }
+
+  .website-mock .pix-right-bottom {
+    left: 11.55rem;
+    bottom: 0.44rem;
+  }
+}
+
+@media (max-width: 808px) {
+  .heading-left {
+    width: 40rem;
+  }
+
+  .image-wrapper {
+    margin-left: -0.5rem;
+  }
+
+  .heading-right {
+    margin: 0 1.3rem 0 3rem;
+  }
+
+  .works-img {
+    width: 21rem;
+  }
+
+  .project-background {
+    height: 24rem;
+  }
+
+  .project-title {
+    font-size: 23px;
+    margin: 1.5rem 0 0 1rem;
+  }
+
+  .project-technologies {
+    font-size: 16px;
+    margin: 0 0 0 1rem;
+  }
+
+}
+
+@media (max-width: 1008px) and (min-width: 734px) {
+  .lucky-btn .pix-left-bottom {
+    top: 3.15rem;
+  }
+
+  .lucky-btn .pix-right-top {
+    top: -0.5rem;
+    left: 19.6rem;
+  }
+
+  .lucky-btn .pix-right-bottom {
+    bottom: -0.5rem;
+    left: 19.6rem;
+  }
+
+  .lucky-btn .pix-left-top {
+    bottom: 1.35rem;
+  }
+
+  .website-mock {
+    height: 54vh;
+  }
+
+  .website-mock.project-1 img{
+    width: 50%;
+  }
+
+  .website-mock.project-2 img,
+  .website-mock.project-3 img {
+    width: 70%;
+  }
+
+  .website-title {
+    font-size: 3.5rem;
+  }
+}
