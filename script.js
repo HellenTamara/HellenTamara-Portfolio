@@ -63,38 +63,50 @@ $(document).ready(function () {
 // Projects Redirecting Links
 $(document).ready(function () {
 
-  $('.project1, .arrow-wrap-1').on('click', function () {
+  $('.project1').on('click', function () {
+    document.location = `project1page.html`;
+  });
+
+  $('.project2').on('click', function () {
+    document.location = `project2page.html`;
+  });
+
+  $('.project3').on('click', function () {
+    document.location = `project3page.html`;
+  });
+
+  $('.arrow-wrap-1').on('click', function () {
     const firstChildClasses = $('.project-background.project-1').children().first().attr('class');
     const match = firstChildClasses.match(/project(\d+)/);
     const projectNumber = parseInt(match[1]);
     document.location = `project${projectNumber}page.html`;
   });
 
-  $('.project1.lang-pt, .arrow-wrap-1.lang-pt').on('click', function () {
-    document.location = "project1pt.html";
-  });
+  // $('.project1.lang-pt, .arrow-wrap-1.lang-pt').on('click', function () {
+  //   document.location = "project1pt.html";
+  // });
 
-  $('.project2, .arrow-wrap-2').on('click', function () {
+  $('.arrow-wrap-2').on('click', function () {
     const firstChildClasses = $('.project-background.project-2').children().first().attr('class');
     const match = firstChildClasses.match(/project(\d+)/);
     const projectNumber = parseInt(match[1]);
     document.location = `project${projectNumber}page.html`;
   });
 
-  $('.project2.lang-pt, .arrow-wrap-2.lang-pt').on('click', function () {
-    document.location = "project2pt.html";
-  });
+  // $('.project2.lang-pt, .arrow-wrap-2.lang-pt').on('click', function () {
+  //   document.location = "project2pt.html";
+  // });
 
-  $('.project3, .arrow-wrap-3').on('click', function () {
+  $('.arrow-wrap-3').on('click', function () {
     const firstChildClasses = $('.project-background.project-3').children().first().attr('class');
     const match = firstChildClasses.match(/project(\d+)/);
     const projectNumber = parseInt(match[1]);
     document.location = `project${projectNumber}page.html`;
   });
 
-  $('.project3.lang-pt, .arrow-wrap-3.lang-pt').on('click', function () {
-    document.location = "project1pt.html";
-  });
+  // $('.project3.lang-pt, .arrow-wrap-3.lang-pt').on('click', function () {
+  //   document.location = "project1pt.html";
+  // });
 });
 
 // I'm feeling lucky button
