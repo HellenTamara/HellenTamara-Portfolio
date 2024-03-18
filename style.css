@@ -1507,11 +1507,13 @@ input.main-rec {
     height: 61vh;
   }
 
-  .website-mock.project-1 img,
+  .website-mock.project-1 img{
+    width: 50%;
+  }
+
   .website-mock.project-2 img,
   .website-mock.project-3 img {
-    width: 100%;
-    margin: 0 0 2rem 0;
+    width: 70%;
   }
 
   .website-title {
@@ -1912,11 +1914,13 @@ input.main-rec {
     background-color: var(--white-color);
   }
 
-  .website-mock img {
-    width: 70%;
+  .website-mock.project-1 img {
+    width: 75%;
   }
 
-  .website-mock.project2 img {
+
+  .website-mock.project-2 img,
+  .website-mock.project-3 img  {
     width: 100%;
   }
 
