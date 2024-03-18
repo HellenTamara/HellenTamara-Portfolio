@@ -93,7 +93,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $(".lucky-btn").click(function () {
         let number = 1 + Math.floor(Math.random() * 3);
-        let randomLink = `.arrow-wrap-${number} a:first`;
+        let randomLink = `.arrow-wrap-${number}`;
         let linkElement = $(randomLink);
 
         if (linkElement.length) {
