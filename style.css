@@ -1066,6 +1066,20 @@ input.main-rec {
     margin: 0 0 0 3rem;
   }
 
+  .project-background {
+    height: 24rem;
+  }
+
+  .project-title {
+    font-size: 23px;
+    margin: 1.5rem 0 0 1rem;
+  }
+
+  .project-technologies {
+    font-size: 16px;
+    margin: 0 0 0 1rem;
+  }
+
   /* Mobile Menu */
 
   .show {
@@ -1313,7 +1327,6 @@ input.main-rec {
     left: 34rem;
     top: 58rem;
     font-size: 65px;
-
   }
 
   .icon-wrap {
@@ -1455,6 +1468,20 @@ input.main-rec {
     width: 21rem;
   }
 
+  .project-background {
+    height: 24rem;
+  }
+
+  .project-title {
+    font-size: 23px;
+    margin: 1.5rem 0 0 1rem;
+  }
+
+  .project-technologies {
+    font-size: 16px;
+    margin: 0 0 0 1rem;
+  }
+
 }
 
 @media (max-width: 1008px) and (min-width: 734px) {
@@ -1474,6 +1501,23 @@ input.main-rec {
 
   .lucky-btn .pix-left-top {
     bottom: 1.35rem;
+  }
+
+
+
+  .website-mock {
+    height: 39vh;
+  }
+
+  .website-mock.project-1 img,
+  .website-mock.project-2 img,
+  .website-mock.project-3 img {
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+
+  .website-title {
+    font-size: 3.5rem;
   }
 }
 
@@ -1543,7 +1587,7 @@ input.main-rec {
   }
 
   .project-background {
-    height: 30rem;
+    height: 24rem;
     width: 95%;
   }
 
@@ -1911,7 +1955,7 @@ input.main-rec {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 344px) {
 
   /* Project Page */
   .project-background {
@@ -1928,6 +1972,7 @@ input.main-rec {
     font-size: 23px;
     margin: 0.5rem 0 0 1rem;
   }
+
   .project-technologies {
     font-size: 16px;
     margin: 0 0 0 1rem;
