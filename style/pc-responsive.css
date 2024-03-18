@@ -22,11 +22,15 @@
   }
 
   .latest-work-title,
-  .latest-work-text,
-  .latest-works-gallery {
+  .latest-work-text {
     width: 1093px;
     margin: 0 auto;
     text-align: center;
+  }
+
+  .latest-works-gallery {
+    width: 1093px;
+    margin: 0 auto;
   }
 
   .arrow-wrap-2 {

@@ -1,14 +1,14 @@
 /* Compnonents/Pages */
 @import url('style/common.css');
-@import url('style/navbar.css');
-@import url('style/heading.css');
-@import url('style/latest-work.css');
 @import url('style/contact.css');
-@import url('style/footer.css');
+@import url('style/heading.css');
+@import url('style/navbar.css');
+@import url('style/latest-work.css');
 @import url('style/works-page.css');
 @import url('style/project-page.css');
+@import url('style/footer.css');
 
 /* Responsive */
-@import url('style/phone-responsive.css');
-@import url('style/tablet-responsive.css');
 @import url('style/pc-responsive.css');
+@import url('style/tablet-responsive.css');
+@import url('style/phone-responsive.css');
